@@ -38,7 +38,7 @@ const posts = [
     excerpt:
       "A structured 30-day learning roadmap for practising Chartered Accountants in India — covering AI foundations, audit automation, tax technology, and advisory transformation.",
     category: "AI & Finance",
-    date: "April 2025",
+    date: "April 2026",
     readTime: "15 min read",
   },
   {
@@ -56,7 +56,7 @@ const posts = [
     excerpt:
       "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks.",
     category: "Stablecoins",
-    date: "May 2025",
+    date: "June 2025",
     readTime: "16 min read",
   },
   {
@@ -65,7 +65,7 @@ const posts = [
     excerpt:
       "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner.",
     category: "Tokenization",
-    date: "May 2025",
+    date: "July 2025",
     readTime: "18 min read",
   },
   {
@@ -74,7 +74,7 @@ const posts = [
     excerpt:
       "Central bank digital currencies and decentralized finance — exploring the intersection of state-backed and open financial systems.",
     category: "Regulatory",
-    date: "May 2025",
+    date: "Oct 2025",
     readTime: "18 min read",
   },
   {
@@ -83,7 +83,7 @@ const posts = [
     excerpt:
       "Why throughput alone doesn't tell the full story — and what really matters when evaluating blockchain infrastructure.",
     category: "Blockchain",
-    date: "May 2025",
+    date: "Dec 2025",
     readTime: "20 min read",
   },
 ];
