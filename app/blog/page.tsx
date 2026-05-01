@@ -42,31 +42,13 @@ const posts = [
     readTime: "15 min read",
   },
   {
-    slug: "defi-banking-sea",
-    title: "DeFi Banking in Southeast Asia",
+    slug: "layer1-scaling",
+    title: "Layer-1 Scaling: Beyond TPS Metrics",
     excerpt:
-      "How decentralized finance is reshaping financial inclusion across emerging markets and what it means for the underbanked.",
-    category: "DeFi",
-    date: "May 2025",
-    readTime: "14 min read",
-  },
-  {
-    slug: "stablecoin-architecture",
-    title: "Designing Compliant Stablecoin Architectures",
-    excerpt:
-      "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks.",
-    category: "Stablecoins",
-    date: "June 2025",
-    readTime: "16 min read",
-  },
-  {
-    slug: "rwa-tokenization",
-    title: "Real-World Asset Tokenization: A Practical Guide",
-    excerpt:
-      "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner.",
-    category: "Tokenization",
-    date: "July 2025",
-    readTime: "18 min read",
+      "Why throughput alone doesn't tell the full story — and what really matters when evaluating blockchain infrastructure.",
+    category: "Blockchain",
+    date: "Dec 2025",
+    readTime: "20 min read",
   },
   {
     slug: "cbdc-defi",
@@ -78,13 +60,31 @@ const posts = [
     readTime: "18 min read",
   },
   {
-    slug: "layer1-scaling",
-    title: "Layer-1 Scaling: Beyond TPS Metrics",
+    slug: "rwa-tokenization",
+    title: "Real-World Asset Tokenization: A Practical Guide",
     excerpt:
-      "Why throughput alone doesn't tell the full story — and what really matters when evaluating blockchain infrastructure.",
-    category: "Blockchain",
-    date: "Dec 2025",
-    readTime: "20 min read",
+      "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner.",
+    category: "Tokenization",
+    date: "July 2025",
+    readTime: "18 min read",
+  },
+  {
+    slug: "stablecoin-architecture",
+    title: "Designing Compliant Stablecoin Architectures",
+    excerpt:
+      "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks.",
+    category: "Stablecoins",
+    date: "June 2025",
+    readTime: "16 min read",
+  },
+  {
+    slug: "defi-banking-sea",
+    title: "DeFi Banking in Southeast Asia",
+    excerpt:
+      "How decentralized finance is reshaping financial inclusion across emerging markets and what it means for the underbanked.",
+    category: "DeFi",
+    date: "May 2025",
+    readTime: "14 min read",
   },
 ];
 
