@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "AI for the Modern CA — 30-Day Roadmap",
     description:
       "A structured 30-day learning roadmap for practising Chartered Accountants in India — covering AI foundations, audit automation, tax technology, and advisory transformation.",
-    publishedTime: "2025-04-30",
+    publishedTime: "2026-04-30",
     tags: ["AI", "Chartered Accountant", "India", "Roadmap", "Finance"],
   },
   twitter: {
@@ -157,7 +157,7 @@ export default function BlogPost() {
           <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-28 md:py-36">
             <div className="flex flex-wrap items-center gap-3 mb-10">
               <span className="text-[11px] font-semibold tracking-wider uppercase px-4 py-2 rounded-full bg-[rgba(124,58,237,0.15)] text-[#a855f7] border border-[rgba(168,85,247,0.25)] backdrop-blur-sm">
-                India · Chartered Accountancy · 2025
+                India · Chartered Accountancy · 2026
               </span>
               <span className="text-[11px] text-[#94a3b8]">30 Days · 5 Phases · ICAI Aligned</span>
             </div>
@@ -308,7 +308,7 @@ export default function BlogPost() {
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
-              30-Day AI Roadmap for Indian Chartered Accountants · 2025
+              30-Day AI Roadmap for Indian Chartered Accountants · 6
             </p>
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
               For educational use · Verify regulatory content with ICAI / CBDT / GSTN
