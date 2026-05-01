@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "CBDCs & DeFi: Convergence or Collision?",
     description:
       "Exploring the intersection of state-backed and open financial systems — and what it means for the future of money.",
-    publishedTime: "2025-05-01",
+    publishedTime: "2025-10-09",
     tags: ["CBDC", "DeFi", "Regulation", "Blockchain", "Digital Finance"],
   },
   twitter: {

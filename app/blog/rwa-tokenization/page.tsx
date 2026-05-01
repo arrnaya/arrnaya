@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Real-World Asset Tokenization: A Practical Guide",
     description:
       "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner.",
-    publishedTime: "2025-05-01",
+    publishedTime: "2025-07-11",
     tags: ["RWA", "Tokenization", "Real World Assets", "ERC-3643", "Smart Contracts", "DeFi"],
   },
   twitter: {

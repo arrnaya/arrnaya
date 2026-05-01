@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Layer-1 Scaling: Beyond TPS Metrics",
     description:
       "Why throughput alone doesn't tell the full story — and what really matters when evaluating blockchain infrastructure.",
-    publishedTime: "2025-05-01",
+    publishedTime: "2025-12-03",
     tags: ["Layer-1", "Blockchain", "Scaling", "Infrastructure", "Finality", "Decentralization"],
   },
   twitter: {

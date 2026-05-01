@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Designing Compliant Stablecoin Architectures",
     description:
       "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks.",
-    publishedTime: "2025-05-01",
+    publishedTime: "2025-06-04",
     tags: ["Stablecoins", "Compliance", "MiCA", "Architecture", "Smart Contract", "DeFi"],
   },
   twitter: {
