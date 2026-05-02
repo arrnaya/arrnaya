@@ -12,9 +12,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://www.arrnaya.com/blog",
-      lastModified: new Date("2025-05-01"),
+      lastModified: new Date("2026-05-02"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: "https://www.arrnaya.com/blog/institutional-custody-architecture",
+      lastModified: new Date("2026-05-02"),
+      changeFrequency: "yearly",
+      priority: 0.8,
     },
     {
       url: "https://www.arrnaya.com/blog/ca-ai-roadmap",

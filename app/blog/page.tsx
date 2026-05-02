@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "institutional-custody-architecture",
+    title: "Designing Institutional-Grade Custody Architecture",
+    excerpt:
+      "A deep technical teardown of institutional digital asset custody: TSS vs multisig, MPC-CMP protocol design, HSM integration, key ceremony architecture, and disaster recovery frameworks.",
+    category: "Custody",
+    date: "May 2026",
+    readTime: "25 min read",
+  },
+  {
     slug: "ca-ai-roadmap",
     title: "AI for the Modern CA — 30-Day Roadmap",
     excerpt:
