@@ -9,13 +9,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Arrnaya — CTO • CBO • Builder • Innovator | Blockchain & DeFi Leader",
+  title: "Arun Kumar Yadav — CTO • Blockchain Solutions Architect • Builder • Innovator | Blockchain & DeFi Leader",
   description:
     "CTO and Chief Business Officer building the future of finance with blockchain, DeFi, tokenization, and regulatory-aligned financial infrastructure across Southeast Asia.",
   keywords: [
     "Arrnaya",
+    "Arun Kumar Yadav",
     "CTO",
-    "CBO",
+    "Blockchain Solutions Architect",
     "Blockchain",
     "DeFi",
     "Web3",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.arrnaya.com/",
     siteName: "Arrnaya",
-    title: "Arrnaya — CTO • CBO • Builder • Innovator",
+    title: "Arun Kumar Yadav — CTO • Blockchain Solutions Architect • Builder • Innovator | Blockchain & DeFi Leader",
     description:
       "Building the future of finance with Blockchain & DeFi. Real-world financial infrastructure that is scalable, compliant, and built for mass adoption.",
     images: [
@@ -50,13 +51,13 @@ export const metadata: Metadata = {
         url: "/new-bg.png",
         width: 1200,
         height: 630,
-        alt: "Arrnaya — CTO & CBO | Blockchain & DeFi Leader",
+        alt: "Arun Kumar Yadav — CTO • Blockchain Solutions Architect • Builder • Innovator | Blockchain & DeFi Leader",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arrnaya — CTO • CBO • Builder • Innovator",
+    title: "Arun Kumar Yadav — CTO • Blockchain Solutions Architect • Builder • Innovator | Blockchain & DeFi Leader",
     description:
       "Building the future of finance with Blockchain & DeFi. Real-world financial infrastructure that is scalable, compliant, and built for mass adoption.",
     images: ["/new-bg.png"],

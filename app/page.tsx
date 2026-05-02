@@ -32,7 +32,7 @@ export default function Home() {
             <div className="py-12 lg:py-0 text-left">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[rgba(124,58,237,0.1)] border border-[rgba(124,58,237,0.25)] rounded-full text-xs font-medium text-[#8b5cf6] mb-6">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                CTO & CBO Leader in Blockchain and DeFi Innovation
+                CTO & Blockchain Solutions Architect. Leader in Blockchain and DeFi Innovation
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-extrabold leading-[1.1] tracking-tight mb-5">
                 Building the Future of Finance with{" "}
@@ -41,7 +41,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-base text-[#94a3b8] max-w-[480px] mb-8 leading-relaxed">
-                CTO and business leader focused on turning blockchain and DeFi into real-world financial infrastructure that is scalable, compliant, and built for mass adoption.
+                CTO and blockchain expert focused on turning blockchain and DeFi into real-world financial infrastructure that is scalable, compliant, and built for mass adoption.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Link
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="text-xs font-semibold tracking-[2px] uppercase text-[#8b5cf6] mb-3">About Me</div>
             <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">Who I Am</h2>
             <div className="text-[15px] text-[#94a3b8] leading-relaxed space-y-4">
-              <p>I currently serve as CTO & Chief Business Officer at MAALChain, where I lead the design and execution of a Layer-1 blockchain, DeFi ecosystem, and tokenization initiatives—including regulatory-facing use cases presented to central banking authorities.</p>
+              <p>I currently serve as CTO & Chief Blockchain Officer at MAALChain, where I lead the design and execution of a Layer-1 blockchain, DeFi ecosystem, and tokenization initiatives—including regulatory-facing use cases presented to central banking authorities.</p>
               <p>In parallel, I am architecting a crypto-funded debit card and DeFi banking platform built on MAALChain, integrating traditional banking APIs and 11+ BINs to make digital finance accessible to underbanked and unbanked populations across Southeast Asia.</p>
               <p>My work sits at the intersection of blockchain & DeFi, payments and banking infrastructure, regulatory-aligned innovation, and scalable technology.</p>
               <div className="flex gap-4 p-5 bg-[#0a0a12] border border-[#1a1a2e] rounded-xl">

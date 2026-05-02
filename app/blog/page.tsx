@@ -111,7 +111,7 @@ export default function BlogPage() {
 
       {/* Blog Hero */}
       <section
-        className="relative pt-44 pb-32 overflow-hidden"
+        className="relative pt-32 pb-32 overflow-hidden"
         style={{
           minHeight: "60vh",
           backgroundImage: "url('/arrnaya-emblem.png')",
