@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arrnaya.github.io/arrnaya/sitemap.xml

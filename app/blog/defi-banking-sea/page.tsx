@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "DeFi Banking in Southeast Asia | Arrnaya Blog",
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     description:
       "How decentralized finance is transforming the lives of 290 million unbanked people across Southeast Asia.",
   },
+  // JSON-LD rendered via component
 };
 
 const toc = [
@@ -45,6 +48,21 @@ const toc = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "DeFi Banking in Southeast Asia",
+        description:
+          "How decentralized finance is reshaping financial inclusion across emerging markets — and what it means for the 290 million people still locked out of traditional banking in SEA.",
+        slug: "defi-banking-sea",
+        datePublished: "2025-05-01",
+        keywords: [
+          "DeFi Southeast Asia",
+          "decentralized finance emerging markets",
+          "financial inclusion blockchain",
+          "unbanked DeFi",
+          "DeFi Philippines Indonesia Vietnam",
+          "crypto banking SEA",
+        ],
+      })} />
       <Navbar />
 
       <article className="pt-20">

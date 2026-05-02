@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://arrnaya.com",
+    url: "https://arrnaya.github.io/arrnaya/",
     siteName: "Arrnaya",
     title: "Arrnaya — CTO • CBO • Builder • Innovator",
     description:
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     creator: "@arrnaya",
   },
   alternates: {
-    canonical: "https://arrnaya.com",
+    canonical: "https://arrnaya.github.io/arrnaya/",
   },
-  metadataBase: new URL("https://arrnaya.com"),
+  metadataBase: new URL("https://arrnaya.github.io/arrnaya/"),
 };
 
 export default function RootLayout({

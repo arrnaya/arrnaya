@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "CBDCs & DeFi: Convergence or Collision? | Arrnaya Blog",
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     description:
       "Exploring the intersection of state-backed and open financial systems — and what it means for the future of money.",
   },
+  // JSON-LD rendered via component
 };
 
 const toc = [
@@ -49,6 +52,25 @@ const toc = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "CBDCs & DeFi: Convergence or Collision?",
+        description:
+          "Central bank digital currencies and decentralized finance are reshaping the global monetary order — but do they represent complementary innovations or existential threats to one another?",
+        slug: "cbdc-defi",
+        datePublished: "2025-10-09",
+        keywords: [
+          "CBDC",
+          "DeFi",
+          "decentralized finance",
+          "central bank digital currency",
+          "blockchain",
+          "crypto regulation",
+          "digital dollar",
+          "financial innovation",
+          "Web3",
+          "monetary policy",
+        ],
+      })} />
       <Navbar />
 
       <article className="pt-20">

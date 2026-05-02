@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Blog — Arrnaya | Ideas, Insights & Innovation",
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     description:
       "In-depth articles on AI, Blockchain, DeFi, Payments, Leadership, and the future of finance.",
   },
+  // JSON-LD rendered via component
 };
 
 const posts = [
@@ -91,6 +94,10 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "https://arrnaya.github.io/arrnaya/" },
+        { name: "Blog", url: "https://arrnaya.github.io/arrnaya/blog" },
+      ])} />
       <Navbar />
 
       {/* Blog Hero */}

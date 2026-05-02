@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Real-World Asset Tokenization: A Practical Guide | Arrnaya Blog",
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     description:
       "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner.",
   },
+  // JSON-LD rendered via component
 };
 
 const toc = [
@@ -49,6 +52,23 @@ const toc = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "Real-World Asset Tokenization: A Practical Guide",
+        description:
+          "From legal structures to smart contract implementation — how to tokenize real assets in a compliant manner, with depth across every asset class from private real estate to sovereign debt.",
+        slug: "rwa-tokenization",
+        datePublished: "2025-07-11",
+        keywords: [
+          "real world asset tokenization",
+          "RWA tokenization guide",
+          "tokenized real estate",
+          "ERC-3643",
+          "asset tokenization legal structure",
+          "tokenized treasury",
+          "tokenized private credit",
+          "RWA DeFi 2025",
+        ],
+      })} />
       <Navbar />
 
       <article className="pt-20">

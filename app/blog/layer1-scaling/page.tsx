@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Layer-1 Scaling: Beyond TPS Metrics | Arrnaya Blog",
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
     description:
       "Why throughput alone doesn't tell the full story — and what really matters when evaluating blockchain infrastructure.",
   },
+  // JSON-LD rendered via component
 };
 
 const toc = [
@@ -51,6 +54,27 @@ const toc = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "Layer-1 Scaling: Beyond TPS Metrics",
+        description:
+          "TPS is a lie — or at least an incomplete truth. This deep-dive explores the real metrics that matter when evaluating Layer-1 blockchain infrastructure: finality, decentralization, state growth, MEV, and economic security.",
+        slug: "layer1-scaling",
+        datePublished: "2025-12-03",
+        keywords: [
+          "Layer 1 blockchain",
+          "TPS metrics",
+          "blockchain scaling",
+          "blockchain infrastructure",
+          "finality",
+          "decentralization trilemma",
+          "MEV",
+          "state growth",
+          "Ethereum",
+          "Solana",
+          "Avalanche",
+          "blockchain performance",
+        ],
+      })} />
       <Navbar />
 
       <article className="pt-20">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Designing Compliant Stablecoin Architectures | Arrnaya Blog",
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     description:
       "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks.",
   },
+  // JSON-LD rendered via component
 };
 
 const toc = [
@@ -49,6 +52,24 @@ const toc = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "Designing Compliant Stablecoin Architectures",
+        description:
+          "Technical and regulatory considerations for building stablecoin systems that work within existing financial frameworks — covering reserve design, smart contract architecture, AML/CFT obligations, and MiCA compliance.",
+        slug: "stablecoin-architecture",
+        datePublished: "2025-06-04",
+        keywords: [
+          "stablecoin architecture",
+          "compliant stablecoin",
+          "MiCA stablecoin",
+          "fiat-backed stablecoin design",
+          "stablecoin regulation 2025",
+          "USDC architecture",
+          "stablecoin smart contract",
+          "reserve management",
+          "stablecoin compliance",
+        ],
+      })} />
       <Navbar />
 
       <article className="pt-20">

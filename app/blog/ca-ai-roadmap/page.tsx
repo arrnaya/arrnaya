@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import JsonLd from "../../components/JsonLd";
+import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "AI for the Modern CA — 30-Day Roadmap | Arrnaya Blog",
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     description:
       "A structured 30-day learning roadmap for practising Chartered Accountants in India.",
   },
+  // JSON-LD rendered via component
 };
 
 const phases = [
@@ -128,6 +131,24 @@ const tools = [
 export default function BlogPost() {
   return (
     <>
+      <JsonLd data={blogPostingSchema({
+        headline: "AI for the Modern CA — 30-Day Roadmap",
+        description:
+          "A structured 30-day learning roadmap for practising Chartered Accountants in India — covering AI foundations, audit automation, tax technology, and advisory transformation.",
+        slug: "ca-ai-roadmap",
+        datePublished: "2026-04-30",
+        keywords: [
+          "AI for CA",
+          "Chartered Accountant",
+          "AI Roadmap",
+          "Audit Automation",
+          "Tax Technology",
+          "ICAI",
+          "Indian CA",
+          "AI Tools",
+          "Machine Learning Finance",
+        ],
+      })} />
       <Navbar />
 
       {/* Post Header — Purple Sparkling Background */}

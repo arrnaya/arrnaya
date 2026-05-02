@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import JsonLd from "./components/JsonLd";
+import { websiteSchema, personSchema } from "@/lib/schema";
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={[websiteSchema(), personSchema()]} />
       <Navbar />
 
       {/* HERO */}
