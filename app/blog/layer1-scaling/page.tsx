@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JsonLd from "../../components/JsonLd";
+import FaqSection from "../../components/FaqSection";
+import RelatedReading from "../../components/RelatedReading";
 import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -522,16 +524,64 @@ bitcoin_full:      ~650 GB  // slow growth, UTXO model helps
           </div>
         </div>
 
+        <div className="max-w-[1200px] mx-auto px-6">
+          <FaqSection
+            headline="Blockchain Infrastructure & Scaling"
+            items={[
+              {
+                question: "Is TPS completely irrelevant when evaluating blockchains?",
+                answer: "No — but it's insufficient. TPS measures throughput under ideal conditions. What matters more is sustained production TPS during congestion, the cost per transaction at peak load, and how complex the transactions are. A chain claiming 65,000 TPS with simple transfers may process only 300 TPS for complex DeFi interactions. TPS is a ceiling, not a floor. Evaluate it alongside finality time, state growth, validator hardware requirements, and economic security.",
+              },
+              {
+                question: "What's the difference between probabilistic and instant finality?",
+                answer: "Probabilistic finality (Bitcoin, pre-Merge Ethereum) means transactions become exponentially harder to reverse with each new block, but never mathematically impossible. Instant finality (BFT chains like Cosmos, Avalanche) means transactions are irreversible as soon as validators reach consensus — typically within 1–2 seconds. Ethereum post-Merge uses economic finality: after two epochs (~12.8 minutes), reversing a transaction would require burning ~$30B+ in staked ETH. For payments, instant finality is ideal. For DeFi, economic finality with strong validator economics may be preferable.",
+              },
+              {
+                question: "Should I build on Ethereum, Solana, or a Cosmos app-chain?",
+                answer: "It depends on your threat model. Choose Ethereum if maximum security and decentralization matter — its 10,000+ node network and $100B+ economic security make it the safest choice for high-value settlements. Choose Solana if you need fast finality and high throughput for consumer applications — but accept the tradeoff of validator concentration (~19 validators control 33%+ stake). Choose Cosmos if you need a sovereign chain with custom tokenomics and governance — but accept the security fragmentation of smaller validator sets. Many serious applications use Ethereum L2s (Arbitrum, Base) to combine Ethereum security with Solana-like speed.",
+              },
+              {
+                question: "What is state growth, and why does it matter for long-term scalability?",
+                answer: "State is the cumulative record of all accounts, balances, and contract storage. State growth is how fast this record expands. Ethereum's full archive node is ~2.4 TB and growing ~1 GB/day. Solana's ledger is ~90 TB. As state grows, validator hardware requirements escalate — excluding smaller operators and centralizing validation. High-TPS chains face compounding state growth. Solutions like Ethereum's stateless clients and Verkle trees aim to separate history storage from state execution, but these are multi-year engineering efforts.",
+              },
+            ]}
+          />
+        </div>
+
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
-              Layer-1 Scaling: Beyond TPS Metrics · May 2025
+              Layer-1 Scaling: Beyond TPS Metrics · Dec 2025
             </p>
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
               Infrastructure analysis for builders · Not financial advice
             </p>
           </div>
+        </div>
+        <div className="max-w-[1200px] mx-auto px-6 pb-24">
+          <RelatedReading
+            posts={[
+              {
+                slug: "rwa-tokenization",
+                title: "Real-World Asset Tokenization: A Practical Guide",
+                category: "Tokenization",
+                excerpt: "From legal structures to smart contract implementation — how to tokenize real assets.",
+              },
+              {
+                slug: "cbdc-defi",
+                title: "CBDCs & DeFi: Convergence or Collision?",
+                category: "Regulatory",
+                excerpt: "Exploring the intersection of state-backed and open financial systems.",
+              },
+              {
+                slug: "stablecoin-architecture",
+                title: "Designing Compliant Stablecoin Architectures",
+                category: "Stablecoins",
+                excerpt: "Technical and regulatory considerations for building stablecoin systems.",
+              },
+            ]}
+          />
         </div>
       </article>
 

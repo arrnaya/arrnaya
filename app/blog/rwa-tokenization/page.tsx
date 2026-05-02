@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JsonLd from "../../components/JsonLd";
+import FaqSection from "../../components/FaqSection";
+import RelatedReading from "../../components/RelatedReading";
 import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -798,16 +800,64 @@ contract RWADistributor {
           </div>
         </div>
 
+        <div className="max-w-[1200px] mx-auto px-6">
+          <FaqSection
+            headline="Tokenizing Real-World Assets"
+            items={[
+              {
+                question: "What types of assets can be tokenized?",
+                answer: "Technically, almost any asset with definable ownership and value can be tokenized. The most mature categories in 2025 are: (1) Private real estate — tokenized via SPVs with on-chain ownership records; (2) Private credit and receivables — invoice factoring and revenue-based financing; (3) Treasury securities — BlackRock's BUIDL fund and Franklin Templeton's OnChain fund are live examples; (4) Commodities — gold (PAXG) and oil tokens; (5) Equity and fund units — via security token offerings (STOs) under Reg D/S exemptions; and (6) Intellectual property — royalty streams from music, patents, and licensing.",
+              },
+              {
+                question: "Is tokenization legal in all jurisdictions?",
+                answer: "No. Tokenization is legal in structured forms in the US, EU, Singapore, UAE, and Switzerland — but each has distinct requirements. The US requires SEC registration or exemption (Reg D, Reg S, Reg A+). The EU's MiCA framework provides a harmonized regime for asset-referenced and e-money tokens. Singapore licenses tokenization platforms under the Securities and Futures Act. Offshore jurisdictions (Cayman, BVI) offer flexible SPV structures but limited enforceability. The key is matching the legal structure to the investor base and ensuring the token does not violate securities laws in the jurisdictions where it is marketed.",
+              },
+              {
+                question: "How much does it cost to tokenize a real estate asset?",
+                answer: "For a mid-size commercial property ($5–20M), total tokenization costs range from $150,000 to $500,000: $50–100K for legal structure (SPV, PPM, exemption filing), $30–80K for smart contract development and audit, $20–50K for oracle and custody integration, $30–70K for compliance infrastructure (KYC/AML, transfer agent), and $20–50K for platform fees and ongoing administration. The economics improve at scale — tokenizing a portfolio is significantly cheaper per asset than a one-off.",
+              },
+              {
+                question: "What's the difference between ERC-20 and ERC-3643 for security tokens?",
+                answer: "ERC-20 is a fungible token standard with no built-in compliance controls — anyone can transfer tokens to any address. ERC-3643 (formerly T-REX) is a security token standard that enforces identity verification, transfer restrictions, and investor whitelisting at the smart contract level. For regulated securities, ERC-3643 is the practical choice: it allows issuers to freeze transfers, enforce holding periods, and maintain an accurate cap table on-chain. ERC-20 works for unregulated utility tokens or wrapped assets where compliance is handled off-chain.",
+              },
+            ]}
+          />
+        </div>
+
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
-              Real-World Asset Tokenization: A Practical Guide · May 2025
+              Real-World Asset Tokenization: A Practical Guide · July 2025
             </p>
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
               For educational use · Not financial or legal advice
             </p>
           </div>
+        </div>
+        <div className="max-w-[1200px] mx-auto px-6 pb-24">
+          <RelatedReading
+            posts={[
+              {
+                slug: "stablecoin-architecture",
+                title: "Designing Compliant Stablecoin Architectures",
+                category: "Stablecoins",
+                excerpt: "Technical and regulatory considerations for building stablecoin systems.",
+              },
+              {
+                slug: "cbdc-defi",
+                title: "CBDCs & DeFi: Convergence or Collision?",
+                category: "Regulatory",
+                excerpt: "Exploring the intersection of state-backed and open financial systems.",
+              },
+              {
+                slug: "layer1-scaling",
+                title: "Layer-1 Scaling: Beyond TPS Metrics",
+                category: "Blockchain",
+                excerpt: "Why throughput alone doesn't tell the full story — and what really matters.",
+              },
+            ]}
+          />
         </div>
       </article>
 

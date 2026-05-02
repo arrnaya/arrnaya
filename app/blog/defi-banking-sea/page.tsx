@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JsonLd from "../../components/JsonLd";
+import FaqSection from "../../components/FaqSection";
+import RelatedReading from "../../components/RelatedReading";
 import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -498,6 +500,30 @@ export default function BlogPost() {
           </div>
         </div>
 
+        <div className="max-w-[1200px] mx-auto px-6">
+          <FaqSection
+            headline="DeFi & Financial Inclusion in SEA"
+            items={[
+              {
+                question: "Why can't traditional banks serve the unbanked in Southeast Asia?",
+                answer: "Three structural barriers: (1) High cost-to-serve — rural customers have small balances, making branch economics unviable; (2) Documentation requirements — KYC in emerging markets demands formal IDs, utility bills, and proof of address that informal workers lack; (3) Regulatory restrictions — foreign ownership caps and high capital requirements limit competition. DeFi bypasses branches via mobile wallets, reduces KYC friction through progressive verification, and operates without legacy infrastructure.",
+              },
+              {
+                question: "Is DeFi safe for first-time users in emerging markets?",
+                answer: "Not without guardrails. The risks are real: smart contract exploits, stablecoin depegs, phishing scams, and irreversible transactions. However, the risk profile is evolving. Insured wallets, social recovery mechanisms, and fiat-backed stablecoins (USDC over algorithmic alternatives) reduce catastrophic loss probability. Education is the critical variable — users who understand seed phrase security, slippage, and protocol risks fare significantly better. The Philippines' BSP and Singapore's MAS are both issuing DeFi consumer protection guidelines.",
+              },
+              {
+                question: "Which Southeast Asian countries are most open to DeFi innovation?",
+                answer: "Singapore leads with MAS licensing frameworks for DPT and payment token services. The Philippines has a vibrant P2E and remittance DeFi culture with BSP circulars on VASP registration. Vietnam has high crypto adoption but ambiguous regulation — operating in a grey zone. Indonesia permits crypto trading but bans it as payment. Thailand licenses digital asset businesses through the SEC. Malaysia is cautious, requiring SC approval. Myanmar, Cambodia, and Laos have minimal frameworks and high risks.",
+              },
+              {
+                question: "What are the most practical DeFi use cases for unbanked SEA populations?",
+                answer: "(1) Stablecoin remittances — sending USDT/USDC from overseas workers to families, bypassing 7–12% Western Union fees; (2) Micro-loans via pooled lending protocols, collateralized by stablecoins or tokenized receipts; (3) Yield on savings — DeFi money markets offer 3–8% APY on stablecoin deposits versus 0.5–1.5% at local banks; (4) Crop insurance via parametric smart contracts (piloted in the Philippines); (5) Cross-border trade finance via tokenized invoices.",
+              },
+            ]}
+          />
+        </div>
+
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
@@ -508,6 +534,30 @@ export default function BlogPost() {
               For educational use · Not financial advice
             </p>
           </div>
+        </div>
+        <div className="max-w-[1200px] mx-auto px-6 pb-24">
+          <RelatedReading
+            posts={[
+              {
+                slug: "cbdc-defi",
+                title: "CBDCs & DeFi: Convergence or Collision?",
+                category: "Regulatory",
+                excerpt: "Exploring the intersection of state-backed and open financial systems.",
+              },
+              {
+                slug: "stablecoin-architecture",
+                title: "Designing Compliant Stablecoin Architectures",
+                category: "Stablecoins",
+                excerpt: "Technical and regulatory considerations for building stablecoin systems.",
+              },
+              {
+                slug: "rwa-tokenization",
+                title: "Real-World Asset Tokenization: A Practical Guide",
+                category: "Tokenization",
+                excerpt: "From legal structures to smart contract implementation — how to tokenize real assets.",
+              },
+            ]}
+          />
         </div>
       </article>
 

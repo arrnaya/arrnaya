@@ -1,4 +1,4 @@
-const BASE_URL = "https://arrnaya.github.io/arrnaya";
+const BASE_URL = "https://www.arrnaya.com";
 const OG_IMAGE = `${BASE_URL}/og-image.png`;
 
 export function blogPostingSchema(params: {

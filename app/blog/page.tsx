@@ -95,8 +95,8 @@ export default function BlogPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://arrnaya.github.io/arrnaya/" },
-        { name: "Blog", url: "https://arrnaya.github.io/arrnaya/blog" },
+        { name: "Home", url: "https://www.arrnaya.com/" },
+        { name: "Blog", url: "https://www.arrnaya.com/blog" },
       ])} />
       <Navbar />
 

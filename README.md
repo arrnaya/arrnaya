@@ -2,7 +2,7 @@
 
 > I work at the intersection of **artificial intelligence**, **blockchain infrastructure**, and **global finance** — building systems, writing deeply, and advising teams that are shaping what comes next.
 
-[![Website](https://img.shields.io/badge/arrnaya.github.io/arrnaya-7c3aed?style=flat-square&logo=githubpages&logoColor=white)](https://arrnaya.github.io/arrnaya/)
+[![Website](https://img.shields.io/badge/arrnaya.github.io/arrnaya-7c3aed?style=flat-square&logo=githubpages&logoColor=white)](https://www.arrnaya.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/arrnaya)
 [![X / Twitter](https://img.shields.io/badge/@arrnaya-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/arrnaya)
 
@@ -25,16 +25,16 @@ I help organizations navigate the transition from traditional financial infrastr
 
 ## Technical Writing
 
-I publish long-form technical analysis on [my blog](https://arrnaya.github.io/arrnaya/blog). These aren't surface-level explainers — they're infrastructure audits, architectural breakdowns, and practical guides written for builders and decision-makers.
+I publish long-form technical analysis on [my blog](https://www.arrnaya.com/blog). These aren't surface-level explainers — they're infrastructure audits, architectural breakdowns, and practical guides written for builders and decision-makers.
 
 | Article | Domain | Read |
 |---------|--------|------|
-| **Layer-1 Scaling: Beyond TPS Metrics** | Blockchain Infrastructure | [Read →](https://arrnaya.github.io/arrnaya/blog/layer1-scaling) |
-| **Real-World Asset Tokenization: A Practical Guide** | Tokenization | [Read →](https://arrnaya.github.io/arrnaya/blog/rwa-tokenization) |
-| **CBDCs & DeFi: Convergence or Collision?** | Regulatory / Policy | [Read →](https://arrnaya.github.io/arrnaya/blog/cbdc-defi) |
-| **Designing Compliant Stablecoin Architectures** | Stablecoins | [Read →](https://arrnaya.github.io/arrnaya/blog/stablecoin-architecture) |
-| **DeFi Banking in Southeast Asia** | DeFi / Emerging Markets | [Read →](https://arrnaya.github.io/arrnaya/blog/defi-banking-sea) |
-| **AI for the Modern CA — 30-Day Roadmap** | AI / Professional Finance | [Read →](https://arrnaya.github.io/arrnaya/blog/ca-ai-roadmap) |
+| **Layer-1 Scaling: Beyond TPS Metrics** | Blockchain Infrastructure | [Read →](https://www.arrnaya.com/blog/layer1-scaling) |
+| **Real-World Asset Tokenization: A Practical Guide** | Tokenization | [Read →](https://www.arrnaya.com/blog/rwa-tokenization) |
+| **CBDCs & DeFi: Convergence or Collision?** | Regulatory / Policy | [Read →](https://www.arrnaya.com/blog/cbdc-defi) |
+| **Designing Compliant Stablecoin Architectures** | Stablecoins | [Read →](https://www.arrnaya.com/blog/stablecoin-architecture) |
+| **DeFi Banking in Southeast Asia** | DeFi / Emerging Markets | [Read →](https://www.arrnaya.com/blog/defi-banking-sea) |
+| **AI for the Modern CA — 30-Day Roadmap** | AI / Professional Finance | [Read →](https://www.arrnaya.com/blog/ca-ai-roadmap) |
 
 ---
 
@@ -74,7 +74,7 @@ I advise fintech startups, DeFi protocols, and traditional financial institution
 
 ## This Site
 
-This repository powers [arrnaya.github.io/arrnaya](https://arrnaya.github.io/arrnaya/) — a statically exported Next.js 16 site built with TypeScript and Tailwind CSS v3, deployed on GitHub Pages. Every blog post is hand-crafted as a TSX component for precise control over interactive elements, data visualizations, and reading experience.
+This repository powers [arrnaya.github.io/arrnaya](https://www.arrnaya.com/) — a statically exported Next.js 16 site built with TypeScript and Tailwind CSS v3, deployed on GitHub Pages. Every blog post is hand-crafted as a TSX component for precise control over interactive elements, data visualizations, and reading experience.
 
 ```bash
 # Clone and run locally

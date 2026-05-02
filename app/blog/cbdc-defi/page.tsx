@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import JsonLd from "../../components/JsonLd";
+import FaqSection from "../../components/FaqSection";
+import RelatedReading from "../../components/RelatedReading";
 import { blogPostingSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -453,11 +455,35 @@ export default function BlogPost() {
           </div>
         </div>
 
+        <div className="max-w-[1200px] mx-auto px-6">
+          <FaqSection
+            headline="CBDCs & Decentralized Finance"
+            items={[
+              {
+                question: "Will CBDCs replace stablecoins like USDC and USDT?",
+                answer: "Not directly. CBDCs and private stablecoins serve different use cases. CBDCs excel at domestic retail payments, government disbursements, and monetary policy transmission. Private stablecoins dominate cross-border remittances, DeFi collateral, and offshore dollar access. The more likely outcome is coexistence: CBDCs for regulated onshore activity, stablecoins for permissionless global finance.",
+              },
+              {
+                question: "Can DeFi protocols technically integrate with CBDCs?",
+                answer: "Yes, but with significant constraints. Wholesale CBDCs (wCBDC) can integrate via atomic swaps and DvP settlement with tokenized securities. Retail CBDCs (rCBDC) are harder: most designs are account-based, permissioned, and programmable — meaning central banks can freeze, expire, or restrict funds. This breaks composability. The bridge models being explored in Singapore (Project Guardian) and the EU (DLT pilot regime) use intermediated wCBDC as settlement rails while keeping DeFi logic on-chain.",
+              },
+              {
+                question: "What are the privacy implications of CBDCs?",
+                answer: "This is the single most contentious design question. Account-based CBDCs with KYC at the wallet level give governments transaction-level visibility into citizen spending — a surveillance capability that cash does not provide. Token-based or cash-like designs preserve privacy but complicate AML/CFT compliance. China's e-CNY takes the surveillance path. The ECB's digital euro is still deliberating. India's e-Rupee is account-based with tiered KYC. Privacy advocates argue that programmable expiry and spending restrictions represent an unacceptable expansion of state financial control.",
+              },
+              {
+                question: "Which countries are closest to launching a live retail CBDC?",
+                answer: "China (e-CNY) is live at scale with 260M+ wallets. India's e-Rupee is in pilot with 1M+ retail users. Nigeria's e-Naira is live but struggling with adoption. The Bahamas (Sand Dollar) and Jamaica (JAM-DEX) have launched but with minimal usage. The EU's digital euro is in a 2-year preparation phase, targeting 2026–2027. The US has no near-term plans — political opposition and banking lobby resistance have stalled the digital dollar.",
+              },
+            ]}
+          />
+        </div>
+
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
-              CBDCs & DeFi: Convergence or Collision? · May 2025
+              CBDCs & DeFi: Convergence or Collision? · Oct 2025
             </p>
             <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
               For educational use · Not financial advice
