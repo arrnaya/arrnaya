@@ -1,5 +1,5 @@
 const BASE_URL = "https://www.arrnaya.com";
-const OG_IMAGE = `${BASE_URL}/og-image.png`;
+const OG_IMAGE = `${BASE_URL}/new-bg.png`;
 
 export function blogPostingSchema(params: {
   headline: string;

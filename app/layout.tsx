@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Building the future of finance with Blockchain & DeFi. Real-world financial infrastructure that is scalable, compliant, and built for mass adoption.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/new-bg.png",
         width: 1200,
         height: 630,
         alt: "Arrnaya — CTO & CBO | Blockchain & DeFi Leader",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Arrnaya — CTO • CBO • Builder • Innovator",
     description:
       "Building the future of finance with Blockchain & DeFi. Real-world financial infrastructure that is scalable, compliant, and built for mass adoption.",
-    images: ["/og-image.png"],
+    images: ["/new-bg.png"],
     creator: "@arrnaya",
   },
   alternates: {
