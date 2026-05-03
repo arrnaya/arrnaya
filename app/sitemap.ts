@@ -58,5 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.8,
     },
+    {
+      url: "https://www.arrnaya.com/blog/tokenomics-engineering",
+      lastModified: new Date("2026-05-03"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
   ];
 }

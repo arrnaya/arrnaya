@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "tokenomics-engineering",
+    title: "Tokenomics Engineering: Mechanism Design, Game Theory & Quantitative Sustainability",
+    excerpt:
+      "The quantitative models, protocol mechanics, and simulation frameworks behind tokens that survive — covering ve-tokenomics, emission curves, flywheels, reflexivity risk, and agent-based stress testing.",
+    category: "Tokenomics",
+    date: "May 2026",
+    readTime: "28 min read",
+  },
+  {
     slug: "institutional-custody-architecture",
     title: "Designing Institutional-Grade Custody Architecture",
     excerpt:

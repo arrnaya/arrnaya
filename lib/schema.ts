@@ -91,6 +91,9 @@ export function personSchema() {
       "AI in Finance",
       "Regulatory Strategy",
       "Financial Inclusion",
+      "Tokenomics Engineering",
+      "Mechanism Design",
+      "Game Theory in Crypto",
     ],
     sameAs: [
       "https://github.com/arrnaya",

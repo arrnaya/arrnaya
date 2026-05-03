@@ -54,4 +54,10 @@
 <changefreq>yearly</changefreq>
 <priority>0.8</priority>
 </url>
+<url>
+<loc>https://www.arrnaya.com/blog/tokenomics-engineering</loc>
+<lastmod>2026-05-03T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
 </urlset>
