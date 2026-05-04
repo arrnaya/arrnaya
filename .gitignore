@@ -15,3 +15,10 @@ logs
 .DS_Store
 .vscode
 .idea
+herald-config.json
+
+# Sensitive data
+openclaw-bin/commands.txt
+
+# Local Ollama binaries (485MB+, install separately on Windows)
+ollama-local/
