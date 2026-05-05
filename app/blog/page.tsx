@@ -36,6 +36,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "cross-border-payments-blockchain",
+    title: "Cross-Border Payments on Blockchain: Replacing Correspondent Banking",
+    excerpt:
+      "How stablecoin and blockchain rails are dismantling the correspondent banking stack — SWIFT limitations, on-chain settlement mechanics, Circle CCTP, FATF travel rule compliance, and live corridor analysis across ASEAN and global remittance routes.",
+    category: "Payments",
+    date: "May 2026",
+    readTime: "18 min read",
+  },
+  {
+    slug: "crypto-debit-card-infrastructure",
+    title: "Crypto Debit Card Infrastructure: BIN Sponsorship, Card Networks & Programme Management",
+    excerpt:
+      "A practitioner's guide to building crypto-linked debit card infrastructure — BIN sponsorship mechanics, four-party network architecture, programme management, JIT funding flows, FX settlement, spending controls, and compliance engineering.",
+    category: "Payments",
+    date: "May 2026",
+    readTime: "22 min read",
+  },
+  {
     slug: "tokenomics-engineering",
     title: "Tokenomics Engineering: Mechanism Design, Game Theory & Quantitative Sustainability",
     excerpt:
