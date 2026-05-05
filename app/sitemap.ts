@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: "https://www.arrnaya.com/blog/zero-knowledge-proofs-financial-infrastructure",
+      lastModified: new Date("2026-05-06"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.arrnaya.com/blog/cross-border-payments-blockchain",
       lastModified: new Date("2026-05-05"),
       changeFrequency: "yearly",

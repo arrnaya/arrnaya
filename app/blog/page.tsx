@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "zero-knowledge-proofs-financial-infrastructure",
+    title: "Zero-Knowledge Proofs in Financial Infrastructure: ZK-KYC, ZK-AML & Privacy-Preserving Compliance",
+    excerpt:
+      "A practitioner's deep-dive into deploying zero-knowledge proofs in regulated financial systems — covering ZK-KYC architecture, ZK-AML circuit design, proof system selection (Groth16, PLONK, STARKs), Polygon ID integration, FATF Travel Rule compliance, and production deployment patterns.",
+    category: "Cryptography & Compliance",
+    date: "May 2026",
+    readTime: "26 min read",
+  },
+  {
     slug: "cross-border-payments-blockchain",
     title: "Cross-Border Payments on Blockchain: Replacing Correspondent Banking",
     excerpt:
