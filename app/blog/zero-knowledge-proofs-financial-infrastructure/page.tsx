@@ -168,7 +168,7 @@ export default function ZeroKnowledgeProofsPage() {
           position: "relative",
           overflow: "hidden",
           padding: "96px 24px 80px",
-          textAlign: "center",
+          // textAlign: "center",
         }}
       >
         {/* Gradient orbs */}
@@ -200,7 +200,7 @@ export default function ZeroKnowledgeProofsPage() {
             pointerEvents: "none",
           }}
         />
-        <div style={{ position: "relative", maxWidth: "860px", margin: "0 auto" }}>
+        <div style={{ position: "relative", maxWidth: "1200px", margin: "0 auto" }}>
           {/* Eyebrow label */}
           <div
             style={{
@@ -287,7 +287,7 @@ export default function ZeroKnowledgeProofsPage() {
       </section>
 
       {/* ── MAIN CONTENT ─────────────────────────────────────────────────── */}
-      <main style={{ maxWidth: "860px", margin: "0 auto", padding: "64px 24px 96px" }}>
+      <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "64px 24px 96px" }}>
 
         {/* ── TABLE OF CONTENTS ─────────────────────────────────────────── */}
         <nav
@@ -869,11 +869,11 @@ template SanctionsExclusion(tree_depth) {
             Section 06
           </p>
           <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, color: "#f8fafc", marginBottom: "24px", letterSpacing: "-0.01em" }}>
-            Production Systems: Polygon ID, Privado &amp; Verite
+            Production Systems: Polygon ID (Privado), Verite, Aztec &amp; Billions Network
           </h2>
 
           <p style={{ fontSize: "16px", lineHeight: 1.8, color: "#94a3b8", marginBottom: "20px" }}>
-            Three ecosystems have reached production deployment for ZK-based identity in financial applications:
+            Four ecosystems have reached production deployment for ZK-based identity in financial applications:
           </p>
 
           {/* System cards */}
@@ -884,7 +884,7 @@ template SanctionsExclusion(tree_depth) {
                 badge: "PRODUCTION",
                 badgeColor: "#10b981",
                 tech: "iden3 protocol · Groth16 · Circom circuits · Sparse Merkle Tree state",
-                desc: "Privado ID implements the iden3 identity protocol: identity trees, credential schema registry, and ZK query language. Identity providers issue W3C Verifiable Credentials to users; the Privado wallet generates Groth16 proofs in response to verifier queries. The on-chain component is a Polygon-native smart contract that validates proofs against committed identity state roots. Deployed in production by Fractal ID, Quadrata, and several Southeast Asian digital asset exchanges.",
+                desc: "Privado ID implements the iden3 identity protocol: identity trees, credential schema registry, and ZK query language. Identity providers issue W3C Verifiable Credentials to users; the Privado wallet generates Groth16 proofs in response to verifier queries. The on-chain component is a Polygon-native smart contract that validates proofs against committed identity state roots. Deployed in production by Fractal ID, Quadrata, and several Southeast Asian digital asset exchanges. Recently launched their Billions Network L2 for high-throughput ZK identity applications along with Billions token listed on Binance and other major exchanges.",
                 links: ["iden3/circom", "0xPolygonID/js-sdk", "iden3/go-merkletree-sql"],
               },
               {

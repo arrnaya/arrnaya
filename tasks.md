@@ -53,11 +53,11 @@
 
 | Priority | Task | Status | Due |
 |----------|------|--------|-----|
-| P0 | Publish Tokenomics Engineering blog | ✅ Done | 2026-05-03 |
-| P1 | Update memory.md with new post + topic map | 🔄 In Progress | 2026-05-03 |
-| P2 | Build verification (npm run build) | ⏳ Pending | 2026-05-03 |
-| P3 | Next blog topic selection | ⏳ Pending | 2026-05-04 |
+| P0 | Publish Tokenomics Engineering blog | ✅ Done | 2026-05-035 |
+| P1 | Update memory.md with new post + topic map | ✅ Done | 2026-05-05 |
+| P2 | Build verification (npm run build) | ✅ Done | 2026-05-05 |
+| P3 | Next blog topic selection | ⏳ Pending | 2026-05-06 |
 
 ---
 
-*Version: 1.0 | Updated: 2026-05-03*
+*Version: 1.1 | Updated: 2026-05-05*
