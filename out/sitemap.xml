@@ -78,4 +78,10 @@
 <changefreq>yearly</changefreq>
 <priority>0.8</priority>
 </url>
+<url>
+<loc>https://www.arrnaya.com/blog/ai-augmented-web3-infrastructure</loc>
+<lastmod>2026-05-27T00:00:00.000Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.8</priority>
+</url>
 </urlset>

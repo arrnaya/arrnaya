@@ -82,5 +82,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.8,
     },
+    {
+      url: "https://www.arrnaya.com/blog/ai-augmented-web3-infrastructure",
+      lastModified: new Date("2026-05-27"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
   ];
 }

@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-augmented-web3-infrastructure",
+    title: "AI-Augmented Web3 Infrastructure: From Static Ledgers to Intelligent Economic Operating Systems",
+    excerpt:
+      "A practitioner's deep-dive into AI-blockchain convergence — covering decentralized inference, M2M architecture, smart contracts as policy layers, ZK-ML attestation, agentic dApps, and the design principles for building intelligent Web3 infrastructure in 2026.",
+    category: "AI & Blockchain",
+    date: "May 2026",
+    readTime: "32 min read",
+  },
+  {
     slug: "zero-knowledge-proofs-financial-infrastructure",
     title: "Zero-Knowledge Proofs in Financial Infrastructure: ZK-KYC, ZK-AML & Privacy-Preserving Compliance",
     excerpt:
