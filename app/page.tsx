@@ -243,7 +243,7 @@ export default function Home() {
             Sharing insights on blockchain, DeFi, and the future of financial infrastructure at leading tech events and communities.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1280px] mx-auto">
           <a
             href="https://www.linkedin.com/events/7465334273412214784/"
             target="_blank"
