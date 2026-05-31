@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "arrnaya.com"
+        }
+      ],
+      "destination": "https://www.arrnaya.com/:path*",
+      "permanent": true
+    }
+  ]
+}
