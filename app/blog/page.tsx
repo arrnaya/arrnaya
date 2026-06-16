@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-agents-finance-treasury",
+    title: "The Learning Loop Moat: AI Agents in Finance and Treasury Management",
+    excerpt:
+      "Why frontier AI models are becoming interchangeable — and why the learning loop is the real competitive moat for financial firms. A practitioner's guide to AI agents in treasury, autonomous DeFi operations, institutional memory systems, and model-agnostic finance architecture.",
+    category: "AI & Finance",
+    date: "June 2026",
+    readTime: "22 min read",
+  },
+  {
     slug: "ai-augmented-web3-infrastructure",
     title: "AI-Augmented Web3 Infrastructure: From Static Ledgers to Intelligent Economic Operating Systems",
     excerpt:

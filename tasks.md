@@ -53,10 +53,10 @@
 
 | Priority | Task | Status | Due |
 |----------|------|--------|-----|
-| P0 | Publish Tokenomics Engineering blog | ✅ Done | 2026-05-035 |
-| P1 | Update memory.md with new post + topic map | ✅ Done | 2026-05-05 |
-| P2 | Build verification (npm run build) | ✅ Done | 2026-05-05 |
-| P3 | Next blog topic selection | ⏳ Pending | 2026-05-06 |
+| P0 | Publish The Learning Loop Moat: AI Agents in Finance and Treasury | ✅ Done | 2026-06-16 |
+| P1 | Update memory.md with new post + topic map | ✅ Done | 2026-06-16 |
+| P2 | Build verification (npm run build) | ✅ Done | 2026-06-16 |
+| P3 | Next blog topic selection | ⏳ Pending | 2026-06-17 |
 
 ---
 

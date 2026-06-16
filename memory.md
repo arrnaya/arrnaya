@@ -8,11 +8,11 @@
 ## 🟢 System Status
 
 ```
-Last session:        2026-05-27
-Last post published: AI-Augmented Web3 Infrastructure (2026-05-27)
-Last pillar used:    AI & Blockchain Infrastructure
-Next pillar due:     Payments & Cards OR Financial Inclusion
-Posts published (all time): 9
+Last session:        2026-06-16
+Last post published: The Learning Loop Moat: AI Agents in Finance and Treasury Management (2026-06-16)
+Last pillar used:    AI & Finance
+Next pillar due:     Payments & Cards OR Regulatory
+Posts published (all time): 10
 Posts archived (all time):  0
 Current streak:      1 day
 Approval pending:    None
@@ -33,6 +33,7 @@ Approval pending:    None
 | 7 | 2026-05-02 | Designing Institutional-Grade Custody Architecture | Custody & Security | `institutional-custody-architecture` | — | PUBLISHED |
 | 8 | 2026-05-03 | Tokenomics Engineering: Mechanism Design, Game Theory & Quantitative Sustainability | Tokenomics | `tokenomics-engineering` | — | PUBLISHED |
 | 9 | 2026-05-27 | AI-Augmented Web3 Infrastructure: From Static Ledgers to Intelligent Economic Operating Systems | AI & Blockchain Infrastructure | `ai-augmented-web3-infrastructure` | — | PUBLISHED |
+| 10 | 2026-06-16 | The Learning Loop Moat: AI Agents in Finance and Treasury Management | AI & Finance | `ai-agents-finance-treasury` | — | PUBLISHED |
 
 ---
 
@@ -87,13 +88,13 @@ Approval pending:    None
 - MPC custody / HSM / TSS vs multisig / institutional key management
 - Tokenomics engineering / ve-tokenomics / emission curves / flywheel mechanics / reflexivity risk / agent-based simulation
 - AI-augmented Web3 infrastructure / decentralized AI / ZK-ML / M2M architecture / agentic dApps / self-optimizing chains / 2026 stack design
+- AI agents in finance / treasury management / autonomous DeFi / smart treasury / institutional learning loops / model-agnostic finance
 
 ### Available — High Priority
 - Crypto Debit Card Infrastructure (BIN sponsorship, card networks, programme management)
 - Southeast Asia Regulatory Landscape deep-dive (MAS, BNM, SEC Thailand, OJK, Philippines BSP)
 - Zero-Knowledge Proofs in financial infrastructure (ZK-KYC, ZK-AML, privacy-preserving compliance)
 - Cross-Border Payments on Blockchain (correspondent banking replacement, stablecoin remittances)
-- AI Agents in Finance / Treasury Management (autonomous DeFi, smart treasury)
 - CBDC Implementation Patterns (retail vs wholesale, interoperability, offline payments)
 - Token Launch Playbook (TGE design, liquidity bootstrapping, exchange listings)
 - DeFi Protocol Risk Framework (smart contract risk, oracle risk, governance risk, composability risk)
@@ -157,10 +158,18 @@ Approval pending:    None
 | Custody Architecture | https://www.arrnaya.com/blog/institutional-custody-architecture |
 | Tokenomics Engineering | https://www.arrnaya.com/blog/tokenomics-engineering |
 | AI-Augmented Web3 Infrastructure | https://www.arrnaya.com/blog/ai-augmented-web3-infrastructure |
+| The Learning Loop Moat: AI Agents in Finance and Treasury | https://www.arrnaya.com/blog/ai-agents-finance-treasury |
 
 ---
 
 ## 📋 Decisions Log
+
+### 2026-06-16 — AI Agents in Finance and Treasury Blog Published
+**Decision:** Publish 10th blog post: The Learning Loop Moat: AI Agents in Finance and Treasury Management  
+**Scope:** Created `/app/blog/ai-agents-finance-treasury/page.tsx`, updated blog index, sitemap  
+**SEO:** Enhanced with 20 keywords, OG tags, Twitter cards, JSON-LD BlogPosting + FAQPage schema  
+**Design:** Purple sparkling hero with cyan/teal accent shift for AI theme, data table, code block, pull quotes, 8 FAQ items, related reading  
+**Status:** COMPLETE
 
 ### 2026-05-27 — AI-Augmented Web3 Infrastructure Blog Published
 **Decision:** Publish 9th blog post: AI-Augmented Web3 Infrastructure  
