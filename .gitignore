@@ -3,6 +3,8 @@ node_modules
 .next
 dist
 out
+.out
+/out
 build
 logs
 *.log

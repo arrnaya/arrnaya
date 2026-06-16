@@ -80,7 +80,7 @@ export default function BlogPost() {
             "The Learning Loop Moat: AI Agents in Finance and Treasury Management",
           description:
             "Why frontier AI models are becoming interchangeable — and why the learning loop is the real competitive moat for financial firms. A practitioner's guide to AI agents in treasury, autonomous DeFi operations, institutional memory systems, and model-agnostic finance architecture.",
-          slug: "ai-agents-finance-treasury",
+          slug: "ai-agents-the-learning-loop-moat",
           datePublished: "2026-06-16",
           keywords: [
             "AI agents finance",

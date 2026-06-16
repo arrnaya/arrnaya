@@ -33,7 +33,7 @@ Approval pending:    None
 | 7 | 2026-05-02 | Designing Institutional-Grade Custody Architecture | Custody & Security | `institutional-custody-architecture` | — | PUBLISHED |
 | 8 | 2026-05-03 | Tokenomics Engineering: Mechanism Design, Game Theory & Quantitative Sustainability | Tokenomics | `tokenomics-engineering` | — | PUBLISHED |
 | 9 | 2026-05-27 | AI-Augmented Web3 Infrastructure: From Static Ledgers to Intelligent Economic Operating Systems | AI & Blockchain Infrastructure | `ai-augmented-web3-infrastructure` | — | PUBLISHED |
-| 10 | 2026-06-16 | The Learning Loop Moat: AI Agents in Finance and Treasury Management | AI & Finance | `ai-agents-finance-treasury` | — | PUBLISHED |
+| 10 | 2026-06-16 | The Learning Loop Moat: AI Agents in Finance and Treasury Management | AI & Finance | `ai-agents-the-learning-loop-moat` | — | PUBLISHED |
 
 ---
 
@@ -158,7 +158,7 @@ Approval pending:    None
 | Custody Architecture | https://www.arrnaya.com/blog/institutional-custody-architecture |
 | Tokenomics Engineering | https://www.arrnaya.com/blog/tokenomics-engineering |
 | AI-Augmented Web3 Infrastructure | https://www.arrnaya.com/blog/ai-augmented-web3-infrastructure |
-| The Learning Loop Moat: AI Agents in Finance and Treasury | https://www.arrnaya.com/blog/ai-agents-finance-treasury |
+| The Learning Loop Moat: AI Agents in Finance and Treasury | https://www.arrnaya.com/blog/ai-agents-the-learning-loop-moat |
 
 ---
 
@@ -166,7 +166,7 @@ Approval pending:    None
 
 ### 2026-06-16 — AI Agents in Finance and Treasury Blog Published
 **Decision:** Publish 10th blog post: The Learning Loop Moat: AI Agents in Finance and Treasury Management  
-**Scope:** Created `/app/blog/ai-agents-finance-treasury/page.tsx`, updated blog index, sitemap  
+**Scope:** Created `/app/blog/ai-agents-the-learning-loop-moat/page.tsx`, updated blog index, sitemap  
 **SEO:** Enhanced with 20 keywords, OG tags, Twitter cards, JSON-LD BlogPosting + FAQPage schema  
 **Design:** Purple sparkling hero with cyan/teal accent shift for AI theme, data table, code block, pull quotes, 8 FAQ items, related reading  
 **Status:** COMPLETE

@@ -83,7 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://www.arrnaya.com/blog/ai-agents-finance-treasury",
+      url: "https://www.arrnaya.com/blog/ai-agents-the-learning-loop-moat",
       lastModified: new Date("2026-06-16"),
       changeFrequency: "yearly",
       priority: 0.8,
