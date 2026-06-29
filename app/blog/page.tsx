@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "banking-5-0-ai-human-collaboration",
+    title: "Banking 5.0: AI-Human Collaboration, Embedded Finance, and the Future of Financial Services",
+    excerpt:
+      "A practitioner's deep-dive into Banking 5.0 — how Industry 5.0, AI-human collaboration, embedded finance, and ecosystems are reshaping the business model of financial services. Built on the 4Ps and 10Ps framework.",
+    category: "Future of Finance",
+    date: "June 2026",
+    readTime: "26 min read",
+  },
+  {
     slug: "ai-agents-the-learning-loop-moat",
     title: "The Learning Loop Moat: AI Agents in Finance and Treasury Management",
     excerpt:

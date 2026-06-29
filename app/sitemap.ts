@@ -12,9 +12,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://www.arrnaya.com/blog",
-      lastModified: new Date("2026-05-02"),
+      lastModified: new Date("2026-06-29"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: "https://www.arrnaya.com/blog/banking-5-0-ai-human-collaboration",
+      lastModified: new Date("2026-06-29"),
+      changeFrequency: "yearly",
+      priority: 0.8,
     },
     {
       url: "https://www.arrnaya.com/blog/zero-knowledge-proofs-financial-infrastructure",
