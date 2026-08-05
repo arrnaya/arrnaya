@@ -56,7 +56,10 @@
 | P0 | Publish The Learning Loop Moat: AI Agents in Finance and Treasury | ✅ Done | 2026-06-16 |
 | P1 | Update memory.md with new post + topic map | ✅ Done | 2026-06-16 |
 | P2 | Build verification (npm run build) | ✅ Done | 2026-06-16 |
-| P3 | Next blog topic selection | ⏳ Pending | 2026-06-17 |
+| P0 | Publish Musk Post-Scarcity Thesis (Money Won't Matter by 2036) | ✅ Done | 2026-08-05 |
+| P1 | Update memory.md with new post + topic map | ✅ Done | 2026-08-05 |
+| P2 | Build verification (pnpm run build) — 20/20 static pages OK | ✅ Done | 2026-08-05 |
+| P3 | Next blog topic selection (Payments & Cards OR Regulatory pillar due) | ⏳ Pending | — |
 
 ---
 

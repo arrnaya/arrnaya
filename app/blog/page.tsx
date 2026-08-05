@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "elon-musk-money-wont-matter-2036",
+    title: "Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis",
+    excerpt:
+      "A technical dissection of Elon Musk's July 2026 Economist interview — AI-driven deflation, universal high income, and the claim that money won't matter by 2036. Baumol effects, Engels' pause, distribution economics, and what actually stays scarce.",
+    category: "AI & Economics",
+    date: "August 2026",
+    readTime: "26 min read",
+  },
+  {
     slug: "banking-5-0-ai-human-collaboration",
     title: "Banking 5.0: AI-Human Collaboration, Embedded Finance, and the Future of Financial Services",
     excerpt:
