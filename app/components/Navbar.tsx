@@ -1,10 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navLinks = [
     { href: "/#about", label: "About" },
@@ -15,7 +23,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(245,239,226,0.85)] backdrop-blur-[20px] border-b border-[var(--border)]">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+        scrolled || mobileOpen
+          ? "bg-[rgba(245,239,226,0.85)] backdrop-blur-[20px] border-[var(--border)]"
+          : "bg-transparent border-transparent"
+      }`}
+    >
       <div className="max-w-[1280px] mx-auto px-6 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center gap-3 no-underline">
           <div className="w-9 h-9 bg-[var(--text)] rounded-md flex items-center justify-center">
