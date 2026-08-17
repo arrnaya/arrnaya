@@ -3,18 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --bg: #030308;
-  --bg-card: #0a0a12;
-  --bg-card-hover: #0f0f1a;
-  --border: #1a1a2e;
-  --border-light: #252542;
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --accent: #7c3aed;
-  --accent-light: #8b5cf6;
-  --accent-glow: rgba(124, 58, 237, 0.15);
-  --blue: #3b82f6;
+  /* Editorial warm palette — reference-design.webp */
+  --bg: #f5efe2;
+  --bg-alt: #ece1cc;
+  --bg-card: #fbf7ee;
+  --bg-card-alt: #f0e8d8;
+  --border: #ddd0b2;
+  --border-light: #c7b790;
+  --text: #201c14;
+  --text-muted: #5c5644;
+  --text-dim: #8a8268;
+  --accent: #c06b3f;
+  --accent-light: #d68554;
+  --accent-glow: rgba(192, 107, 63, 0.14);
+  --sage: #74805e;
+  --sage-glow: rgba(116, 128, 94, 0.14);
+  --dusty-blue: #7791a0;
+  --dusty-blue-glow: rgba(119, 145, 160, 0.14);
+  --footer-bg: #16130d;
+  --footer-line: rgba(150, 163, 124, 0.4);
 }
 
 html {
@@ -30,6 +37,6 @@ body {
 }
 
 ::selection {
-  background: rgba(124, 58, 237, 0.3);
-  color: #fff;
+  background: rgba(192, 107, 63, 0.25);
+  color: #201c14;
 }

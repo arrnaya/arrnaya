@@ -30,23 +30,23 @@ export default function FaqSection({
   return (
     <>
       <JsonLd data={faqSchema} />
-      <section className="bg-[#0a0a12] border border-[#1a1a2e] rounded-2xl p-8 md:p-12">
-        <div className="text-[10px] font-mono tracking-widest uppercase text-[#a855f7] mb-6">
+      <section className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 md:p-12">
+        <div className="text-[10px] font-mono tracking-widest uppercase text-[var(--accent)] mb-6">
           Frequently Asked Questions
         </div>
-        <h2 className="text-xl md:text-2xl font-bold text-[#f8fafc] mb-10">
+        <h2 className="font-display text-xl md:text-2xl font-bold text-[var(--text)] mb-10">
           {headline || "Common Questions"}
         </h2>
         <div className="space-y-8">
           {items.map((item, i) => (
             <div
               key={i}
-              className="border-b border-[#1a1a2e] pb-8 last:border-0 last:pb-0"
+              className="border-b border-[var(--border)] pb-8 last:border-0 last:pb-0"
             >
-              <h3 className="text-base font-bold text-[#f8fafc] mb-3 leading-snug">
+              <h3 className="text-base font-bold text-[var(--text)] mb-3 leading-snug">
                 {item.question}
               </h3>
-              <p className="text-[13px] md:text-sm text-[#94a3b8] leading-relaxed">
+              <p className="text-[13px] md:text-sm text-[var(--text-muted)] leading-relaxed">
                 {item.answer}
               </p>
             </div>

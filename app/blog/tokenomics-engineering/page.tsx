@@ -101,37 +101,37 @@ export default function BlogPost() {
       <article className="pt-20">
         {/* Hero */}
         <header className="relative py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-[#0f0524]" />
-          <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] rounded-full bg-[#7c3aed] opacity-20 blur-[120px]" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-[#a855f7] opacity-15 blur-[100px]" />
-          <div className="absolute top-[30%] right-[20%] w-[30%] h-[30%] rounded-full bg-[#3b82f6] opacity-10 blur-[80px]" />
+          <div className="absolute inset-0 bg-[#ece1cc]" />
+          <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] rounded-full bg-[#c2703f] opacity-20 blur-[120px]" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-[#c2703f] opacity-15 blur-[100px]" />
+          <div className="absolute top-[30%] right-[20%] w-[30%] h-[30%] rounded-full bg-[#93aab8] opacity-10 blur-[80px]" />
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `radial-gradient(circle at 20% 30%, rgba(168,85,247,0.4) 0px, rgba(168,85,247,0.4) 1px, transparent 1px),
-                                radial-gradient(circle at 70% 20%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1.5px, transparent 1.5px),
-                                radial-gradient(circle at 40% 70%, rgba(168,85,247,0.35) 0px, rgba(168,85,247,0.35) 1px, transparent 1px),
-                                radial-gradient(circle at 80% 60%, rgba(59,130,246,0.25) 0px, rgba(59,130,246,0.25) 1px, transparent 1px),
-                                radial-gradient(circle at 15% 80%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1.5px, transparent 1.5px),
-                                radial-gradient(circle at 60% 50%, rgba(168,85,247,0.2) 0px, rgba(168,85,247,0.2) 2px, transparent 2px),
-                                radial-gradient(circle at 90% 85%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1px, transparent 1px),
-                                radial-gradient(circle at 35% 15%, rgba(59,130,246,0.2) 0px, rgba(59,130,246,0.2) 1px, transparent 1px)`,
+              backgroundImage: `radial-gradient(circle at 20% 30%, rgba(194,112,63,0.4) 0px, rgba(194,112,63,0.4) 1px, transparent 1px),
+                                radial-gradient(circle at 70% 20%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1.5px, transparent 1.5px),
+                                radial-gradient(circle at 40% 70%, rgba(194,112,63,0.35) 0px, rgba(194,112,63,0.35) 1px, transparent 1px),
+                                radial-gradient(circle at 80% 60%, rgba(147,170,184,0.25) 0px, rgba(147,170,184,0.25) 1px, transparent 1px),
+                                radial-gradient(circle at 15% 80%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1.5px, transparent 1.5px),
+                                radial-gradient(circle at 60% 50%, rgba(194,112,63,0.2) 0px, rgba(194,112,63,0.2) 2px, transparent 2px),
+                                radial-gradient(circle at 90% 85%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1px, transparent 1px),
+                                radial-gradient(circle at 35% 15%, rgba(147,170,184,0.2) 0px, rgba(147,170,184,0.2) 1px, transparent 1px)`,
               backgroundSize:
                 "250px 250px, 300px 300px, 200px 200px, 350px 350px, 280px 280px, 400px 400px, 220px 220px, 320px 320px",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#030308]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#f5efe2]" />
 
           <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-28 md:py-36">
             <div className="flex flex-wrap items-center gap-3 mb-10">
-              <span className="text-[11px] font-semibold tracking-wider uppercase px-4 py-2 rounded-full bg-[rgba(124,58,237,0.15)] text-[#a855f7] border border-[rgba(168,85,247,0.25)] backdrop-blur-sm">
+              <span className="text-[11px] font-semibold tracking-wider uppercase px-4 py-2 rounded-full bg-[rgba(194,112,63,0.15)] text-[#c2703f] border border-[rgba(194,112,63,0.25)] backdrop-blur-sm">
                 Tokenomics · Quantitative · 2026
               </span>
-              <span className="text-[11px] text-[#94a3b8]">28 min read · Advanced</span>
+              <span className="text-[11px] text-[#5c5644]">28 min read · Advanced</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-8">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               Tokenomics{" "}
-              <span className="bg-gradient-to-r from-[#a855f7] to-[#3b82f6] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#c2703f] to-[#93aab8] bg-clip-text text-transparent">
                 Engineering
               </span>
               <br />
@@ -139,7 +139,7 @@ export default function BlogPost() {
               <br />
               &amp; Quantitative Sustainability
             </h1>
-            <p className="text-base md:text-lg text-[#94a3b8] max-w-[700px] leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-[#5c5644] max-w-[700px] leading-relaxed mb-10">
               The quantitative models, protocol mechanics, and simulation frameworks behind tokens that survive — covering ve-tokenomics, emission curves, flywheels, reflexivity risk, and agent-based stress testing.
             </p>
             <div className="flex flex-wrap gap-6">
@@ -149,8 +149,8 @@ export default function BlogPost() {
                 { num: "ve", label: "Vote-escrow model — dominant governance primitive since 2020" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col gap-1">
-                  <span className="text-2xl md:text-3xl font-extrabold text-[#f8fafc]">{stat.num}</span>
-                  <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] max-w-[220px]">{stat.label}</span>
+                  <span className="text-2xl md:text-3xl font-extrabold text-[#201c14]">{stat.num}</span>
+                  <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] max-w-[220px]">{stat.label}</span>
                 </div>
               ))}
             </div>
@@ -158,17 +158,17 @@ export default function BlogPost() {
         </header>
 
         {/* TOC */}
-        <div className="bg-[#0a0a12] border-b border-[#1a1a2e]">
+        <div className="bg-[#fbf7ee] border-b border-[#ddd0b2]">
           <div className="max-w-[1200px] mx-auto px-6 py-8">
-            <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-4">Contents</div>
+            <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-4">Contents</div>
             <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {toc.map((item, i) => (
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-sm text-[#94a3b8] hover:text-[#a855f7] transition-colors leading-relaxed flex items-start gap-3"
+                    className="text-sm text-[#5c5644] hover:text-[#c2703f] transition-colors leading-relaxed flex items-start gap-3"
                   >
-                    <span className="text-[10px] font-mono text-[#64748b] mt-0.5 shrink-0">
+                    <span className="text-[10px] font-mono text-[#8a8268] mt-0.5 shrink-0">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     {item.label}
@@ -184,39 +184,39 @@ export default function BlogPost() {
           <div className="space-y-24">
             {/* Intro */}
             <div className="space-y-6">
-              <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+              <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                 Most tokens are not designed. They are assembled — from whitepaper templates, competitor imitation, and the path of least resistance through launch pressure. The result is predictable: inflationary spirals dressed as yield, governance structures that concentrate power while appearing to distribute it, and flywheel mechanics that work precisely until they don&apos;t — and then accelerate in reverse.
               </p>
-              <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                Tokenomics engineering, done rigorously, is a discipline at the intersection of mechanism design, game theory, behavioural economics, and quantitative finance. It asks a deceptively simple question: <strong className="text-[#f8fafc]">under what conditions will rational agents interacting with this system produce outcomes that sustain the protocol?</strong> And it answers with mathematics, simulation, and an honest accounting of failure modes.
+              <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                Tokenomics engineering, done rigorously, is a discipline at the intersection of mechanism design, game theory, behavioural economics, and quantitative finance. It asks a deceptively simple question: <strong className="text-[#201c14]">under what conditions will rational agents interacting with this system produce outcomes that sustain the protocol?</strong> And it answers with mathematics, simulation, and an honest accounting of failure modes.
               </p>
-              <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+              <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                 This analysis covers the full quantitative stack — from ve-tokenomics architecture and emission curve design through flywheel mechanics, reflexivity risk modelling, and agent-based simulation frameworks used by serious protocol teams.
               </p>
             </div>
 
             {/* Section 1 */}
             <section id="mechanism-design">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">01 · Foundation</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">01 · Foundation</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Mechanism Design Foundations for Token Systems
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Mechanism design is often described as &ldquo;reverse game theory&rdquo;: rather than analysing the outcomes of a given game, you design the game to produce desired outcomes. In token systems, the mechanism is the protocol — the rules governing how tokens are issued, distributed, locked, burned, and used to allocate governance power and economic rewards.
                 </p>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  The foundational result from mechanism design theory — the <strong className="text-[#f8fafc]">Revelation Principle</strong> — tells us that any outcome achievable by a complex mechanism is also achievable by a direct mechanism where agents report their types truthfully. In practice, this means: if your token system requires participants to behave in ways they would not voluntarily choose, you can either change the incentives or accept that the mechanism will not produce its intended outcome. Most failed tokenomics designs violate this principle.
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  The foundational result from mechanism design theory — the <strong className="text-[#201c14]">Revelation Principle</strong> — tells us that any outcome achievable by a complex mechanism is also achievable by a direct mechanism where agents report their types truthfully. In practice, this means: if your token system requires participants to behave in ways they would not voluntarily choose, you can either change the incentives or accept that the mechanism will not produce its intended outcome. Most failed tokenomics designs violate this principle.
                 </p>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Incentive Compatibility Condition</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Incentive Compatibility Condition</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`uᵢ(θᵢ, x(θᵢ, θ₋ᵢ)) ≥ uᵢ(θᵢ, x(θ̂ᵢ, θ₋ᵢ))   ∀ θ̂ᵢ ≠ θᵢ
 
 // Agent i gains no benefit from misreporting their true type θᵢ
@@ -226,8 +226,8 @@ export default function BlogPost() {
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Three Design Constraints Every Token Must Satisfy</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Three Design Constraints Every Token Must Satisfy</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Any sustainable token mechanism must simultaneously satisfy three properties:
                 </p>
 
@@ -237,20 +237,20 @@ export default function BlogPost() {
                     { num: "②", title: "Incentive Compatibility (IC)", desc: "Truthful behaviour must be optimal. In governance contexts, this means token holders should vote for policies that genuinely serve the protocol, not for policies that extract short-term rent at protocol expense. In liquidity contexts, it means LPs should provide genuine liquidity, not mercenary capital that evaporates at the first emission reduction. IC violations are the mechanism designer's original sin." },
                     { num: "③", title: "Budget Balance (BB)", desc: "The mechanism must not run a permanent deficit. In token terms: aggregate value flowing out of the protocol (rewards, emissions, subsidies) must be funded by value flowing in (fees, external capital, organic demand). A protocol that pays $10 in rewards for every $1 in fee revenue is not sustainable — it is a time-limited wealth transfer from future token holders to current ones. Budget balance is where most DeFi protocols have structurally failed." },
                   ].map((item) => (
-                    <div key={item.num} className="flex gap-4 py-5 border-b border-[#1a1a2e]/60">
-                      <span className="w-8 h-8 rounded-full border-2 border-[#a855f7] flex items-center justify-center text-xs font-bold text-[#a855f7] shrink-0 mt-0.5">{item.num}</span>
+                    <div key={item.num} className="flex gap-4 py-5 border-b border-[#ddd0b2]/60">
+                      <span className="w-8 h-8 rounded-full border-2 border-[#c2703f] flex items-center justify-center text-xs font-bold text-[#c2703f] shrink-0 mt-0.5">{item.num}</span>
                       <div>
-                        <strong className="text-[#f8fafc] block mb-1 text-sm">{item.title}</strong>
-                        <p className="text-sm text-[#94a3b8] leading-relaxed">{item.desc}</p>
+                        <strong className="text-[#201c14] block mb-1 text-sm">{item.title}</strong>
+                        <p className="text-sm text-[#5c5644] leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
                 {/* Callout */}
-                <div className="bg-[rgba(59,130,246,0.06)] border border-[rgba(59,130,246,0.15)] rounded-xl p-6 md:p-8">
-                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#3b82f6] mb-3">Key Concept</div>
-                  <p className="text-sm text-[#94a3b8] leading-relaxed">
+                <div className="bg-[rgba(147,170,184,0.06)] border border-[rgba(147,170,184,0.15)] rounded-xl p-6 md:p-8">
+                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#93aab8] mb-3">Key Concept</div>
+                  <p className="text-sm text-[#5c5644] leading-relaxed">
                     The Myerson-Satterthwaite theorem proves that no bilateral trading mechanism can simultaneously satisfy IR, IC, and BB when agents have private information. In token systems, the practical implication is that perfect mechanism design is impossible — tradeoffs between these three properties are structural, not engineering failures. The design task is choosing which property to violate least, not finding a mechanism that satisfies all three perfectly.
                   </p>
                 </div>
@@ -259,26 +259,26 @@ export default function BlogPost() {
 
             {/* Section 2 */}
             <section id="ve-tokenomics">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">02 · Governance</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">02 · Governance</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   ve-Tokenomics: Architecture, Incentives, and Failure Modes
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The vote-escrowed tokenomics model, introduced by Curve Finance in 2020 with veCRV, is the most influential governance primitive in DeFi history. It addresses a specific incentive compatibility problem: how do you align token holder time horizons with protocol time horizons when token holders can exit immediately and governance decisions have long-term consequences?
                 </p>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The answer is temporal commitment: token holders lock tokens for periods up to four years, receiving non-transferable governance power and boosted rewards proportional to lock time. The longer the lock, the more veTOKEN received. veTOKEN balance decays linearly toward zero as the lock approaches expiry, requiring active re-locking to maintain governance weight.
                 </p>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">veTOKEN Balance Calculation (Curve Model)</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">veTOKEN Balance Calculation (Curve Model)</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`veBAL(t) = amount_locked × (t_unlock − t_now) / T_max
 
 // T_max = 4 years in Curve's implementation (208 weeks)
@@ -290,33 +290,33 @@ boost(i) = min(2.5, 0.4 + 1.6 × (veBAL_i / veBAL_total) × (L_total / L_i))
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Gauge Weight System: Directing Emissions via Governance</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Gauge Weight System: Directing Emissions via Governance</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The second component of ve-tokenomics is the gauge weight voting system. veTOKEN holders vote weekly to allocate emission rewards across liquidity pools (gauges). Pools with higher gauge weights receive proportionally more token emissions, which attracts more liquidity, which generates more fees, which attracts more veTOKEN holders who want to direct emissions — a closed incentive loop.
                 </p>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  This created the <strong className="text-[#f8fafc]">Curve Wars</strong>: a meta-game where protocols competed to accumulate veCRV voting power — directly or via aggregators like Convex Finance — to direct CRV emissions to their own liquidity pools. Bribe markets (Votium, Hidden Hand) emerged where protocols paid veTOKEN holders in stablecoins or other tokens to vote for specific gauges. At peak, bribe yields exceeded 50% APY on veCRV — making bribe income a primary value proposition of CRV holding, completely separate from Curve&apos;s fee revenue.
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  This created the <strong className="text-[#201c14]">Curve Wars</strong>: a meta-game where protocols competed to accumulate veCRV voting power — directly or via aggregators like Convex Finance — to direct CRV emissions to their own liquidity pools. Bribe markets (Votium, Hidden Hand) emerged where protocols paid veTOKEN holders in stablecoins or other tokens to vote for specific gauges. At peak, bribe yields exceeded 50% APY on veCRV — making bribe income a primary value proposition of CRV holding, completely separate from Curve&apos;s fee revenue.
                 </p>
 
                 {/* Callout */}
-                <div className="bg-[rgba(245,158,11,0.06)] border border-[rgba(245,158,11,0.15)] rounded-xl p-6 md:p-8">
-                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#f59e0b] mb-3">Critical Risk</div>
-                  <p className="text-sm text-[#94a3b8] leading-relaxed">
+                <div className="bg-[rgba(185,138,61,0.06)] border border-[rgba(185,138,61,0.15)] rounded-xl p-6 md:p-8">
+                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#b98a3d] mb-3">Critical Risk</div>
+                  <p className="text-sm text-[#5c5644] leading-relaxed">
                     When bribe income dominates fee revenue as the primary return on veTOKEN, governance voting decouples from protocol health. Rational veTOKEN holders maximise bribe income rather than protocol value, directing emissions to pools where bribers pay the most — not pools that generate the most fees. This is an IC violation at the governance layer: the mechanism nominally designed to align long-term holders actually rewards short-term bribe optimisation. Protocols inheriting the ve model without understanding this dynamic build in the distortion from day one.
                   </p>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">ve-Tokenomics Variants and Their Tradeoffs</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">ve-Tokenomics Variants and Their Tradeoffs</h3>
 
                 <div className="overflow-x-auto my-10">
                   <table className="w-full text-[13px] border-collapse">
                     <thead>
-                      <tr className="border-b border-[#1a1a2e]">
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Variant</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Protocol</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Key Modification</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Advantage</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Residual Risk</th>
+                      <tr className="border-b border-[#ddd0b2]">
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Variant</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Protocol</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Key Modification</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Advantage</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Residual Risk</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -327,12 +327,12 @@ boost(i) = min(2.5, 0.4 + 1.6 × (veBAL_i / veBAL_total) × (L_total / L_i))
                         ["ve + Continuous", "Bunni v2 (oLIT)", "Options-based emissions rather than direct token rewards", "Prevents immediate sell pressure; options as revenue", "Complexity; options pricing during stress"],
                         ["ve + Decay Only", "Balancer (veBAL)", "80/20 BPT lock instead of pure token; no decay on max lock", "Protocol owns its own liquidity through BPT", "BPT price volatility affects voting power stability"],
                       ].map((row, i) => (
-                        <tr key={i} className="border-b border-[#1a1a2e]/60 hover:bg-[rgba(124,58,237,0.03)] transition-colors">
-                          <td className="py-3 px-4 text-[#f8fafc] font-medium text-[13px]">{row[0]}</td>
-                          <td className="py-3 px-4 text-[#94a3b8]">{row[1]}</td>
-                          <td className="py-3 px-4 text-[#94a3b8]">{row[2]}</td>
-                          <td className="py-3 px-4 text-[#10b981]">{row[3]}</td>
-                          <td className="py-3 px-4 text-[#ef4444]">{row[4]}</td>
+                        <tr key={i} className="border-b border-[#ddd0b2]/60 hover:bg-[rgba(194,112,63,0.03)] transition-colors">
+                          <td className="py-3 px-4 text-[#201c14] font-medium text-[13px]">{row[0]}</td>
+                          <td className="py-3 px-4 text-[#5c5644]">{row[1]}</td>
+                          <td className="py-3 px-4 text-[#5c5644]">{row[2]}</td>
+                          <td className="py-3 px-4 text-[#74805e]">{row[3]}</td>
+                          <td className="py-3 px-4 text-[#b0432f]">{row[4]}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -344,25 +344,25 @@ boost(i) = min(2.5, 0.4 + 1.6 × (veBAL_i / veBAL_total) × (L_total / L_i))
 
             {/* Section 3 */}
             <section id="emission-curves">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">03 · Supply</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">03 · Supply</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Emission Curve Modelling: The Mathematics of Supply
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The emission curve — the schedule by which new tokens enter circulation — is the single most consequential parameter in tokenomics. Get it wrong and you either choke early adoption with scarcity or drown protocol value in inflation. The mathematics of emission design draws from monetary economics, queuing theory, and option pricing.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Four Canonical Emission Curve Families</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Four Canonical Emission Curve Families</h3>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Canonical Emission Curve Equations</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Canonical Emission Curve Equations</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`// 1. FIXED LINEAR — constant emission rate
 E(t) = r × t     // r = tokens/period; simple but inflationary forever
 
@@ -380,17 +380,17 @@ E(t) = f(R(t)) = α × R(t)^β     // R(t) = fee revenue at time t
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Inflation-Adjusted Real Yield: The Metric That Matters</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  Nominal APY figures in DeFi are systematically misleading because they ignore the dilution effect of ongoing emissions. A <span className="text-[#f59e0b] font-mono text-xs border border-[#f59e0b40] bg-[#f59e0b15] px-1.5 py-0.5">50% nominal APY</span> in a pool with <span className="text-[#f59e0b] font-mono text-xs border border-[#f59e0b40] bg-[#f59e0b15] px-1.5 py-0.5">200% annual token inflation</span> produces a negative real yield for non-compounding holders. The correct framework is inflation-adjusted real yield:
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Inflation-Adjusted Real Yield: The Metric That Matters</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  Nominal APY figures in DeFi are systematically misleading because they ignore the dilution effect of ongoing emissions. A <span className="text-[#b98a3d] font-mono text-xs border border-[#b98a3d40] bg-[#b98a3d15] px-1.5 py-0.5">50% nominal APY</span> in a pool with <span className="text-[#b98a3d] font-mono text-xs border border-[#b98a3d40] bg-[#b98a3d15] px-1.5 py-0.5">200% annual token inflation</span> produces a negative real yield for non-compounding holders. The correct framework is inflation-adjusted real yield:
                 </p>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Real Yield Calculation for Token Stakers</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Real Yield Calculation for Token Stakers</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`Real_APY = [(1 + Nominal_APY) / (1 + Inflation_Rate)] − 1
 
 Token_Inflation = ΔSupply(t) / Supply(t₀)
@@ -405,39 +405,39 @@ Fee_Yield = Annual_Protocol_Fees × (Staker_Share) / Market_Cap
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Emission Cliff Problem and Smooth Transition Design</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Emission Cliff Problem and Smooth Transition Design</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Many protocols schedule large emission reductions at fixed intervals — &ldquo;halving events&rdquo; modelled loosely on Bitcoin. Unlike Bitcoin&apos;s halvings, which occur against a background of massive and growing hash rate security, DeFi protocol halvings typically occur against a background of mercenary liquidity. When emissions drop by 50%, mercenary LPs exit, TVL collapses, fee revenue falls, and the price impact of remaining holders selling accelerates the decline. The emission cliff becomes a reflexive liquidity crisis.
                 </p>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  The solution is <strong className="text-[#f8fafc]">smooth emission transitions</strong>: continuous exponential decay rather than step-function halvings, combined with fee revenue growth targets that must be met before the next emission reduction triggers. This makes emission reduction contingent on protocol health rather than calendar time.
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  The solution is <strong className="text-[#201c14]">smooth emission transitions</strong>: continuous exponential decay rather than step-function halvings, combined with fee revenue growth targets that must be met before the next emission reduction triggers. This makes emission reduction contingent on protocol health rather than calendar time.
                 </p>
               </div>
             </section>
 
             {/* Section 4 */}
             <section id="flywheel-mechanics">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">04 · Dynamics</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">04 · Dynamics</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Flywheel Mechanics: Designing Reinforcing Loops
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  A <strong className="text-[#f8fafc]">flywheel</strong> in tokenomics is a self-reinforcing feedback loop: more of A produces more of B, which produces more of A, accelerating the entire system. Well-designed flywheels are the engine of exponential protocol growth. Poorly designed ones are indistinguishable from Ponzi mechanics until they reverse.
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  A <strong className="text-[#201c14]">flywheel</strong> in tokenomics is a self-reinforcing feedback loop: more of A produces more of B, which produces more of A, accelerating the entire system. Well-designed flywheels are the engine of exponential protocol growth. Poorly designed ones are indistinguishable from Ponzi mechanics until they reverse.
                 </p>
 
                 {/* Pull Quote */}
-                <div className="my-10 pl-6 md:pl-8 border-l-[3px] border-[#a855f7] bg-[rgba(168,85,247,0.05)] rounded-r-lg p-6 md:p-8 relative">
-                  <div className="absolute top-2 left-4 text-6xl text-[#a855f7] opacity-20 font-serif leading-none">&ldquo;</div>
-                  <p className="text-base md:text-lg italic text-[#a855f7] leading-relaxed relative z-10 mb-3">
+                <div className="my-10 pl-6 md:pl-8 border-l-[3px] border-[#c2703f] bg-[rgba(194,112,63,0.05)] rounded-r-lg p-6 md:p-8 relative">
+                  <div className="absolute top-2 left-4 text-6xl text-[#c2703f] opacity-20 font-serif leading-none">&ldquo;</div>
+                  <p className="text-base md:text-lg italic text-[#c2703f] leading-relaxed relative z-10 mb-3">
                     The difference between a flywheel and a death spiral is the direction of the loop and the existence of an external value anchor. Flywheels that spin on token price alone are death spirals with extra steps.
                   </p>
-                  <cite className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] not-italic">— Mechanism Design Principle</cite>
+                  <cite className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] not-italic">— Mechanism Design Principle</cite>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Curve/Convex Flywheel: Anatomy of a Working Loop</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Curve/Convex Flywheel: Anatomy of a Working Loop</h3>
 
                 <div className="space-y-0 my-10">
                   {[
@@ -446,35 +446,35 @@ Fee_Yield = Annual_Protocol_Fees × (Staker_Share) / Market_Cap
                     { num: "3", title: "veCRV Directs Emissions to Productive Pools", desc: "veCRV holders vote emissions toward high-fee pools (to maximise their own fee income and bribe revenue). High-fee pools attract more liquidity. More liquidity generates more fees. The governance mechanism reinforces economic value creation — when working correctly." },
                     { num: "4", title: "Protocols Compete for Gauge Weight → Protocol Demand for CRV", desc: "Protocols need CRV emission allocation to bootstrap their liquidity. They must either buy CRV (price demand), bribe veCRV holders (fee income to holders), or accumulate veCRV directly (lock demand). All three paths benefit CRV holders. Convex's cvxCRV abstraction added a capital-efficiency layer that accelerated accumulation — creating the Curve Wars meta-game." },
                   ].map((item) => (
-                    <div key={item.num} className="flex gap-4 py-5 border-b border-[#1a1a2e]/60">
-                      <span className="w-9 h-9 rounded-full bg-[#0a0a12] border-2 border-[#a855f7] flex items-center justify-center text-sm font-bold text-[#a855f7] shrink-0 mt-0.5">{item.num}</span>
+                    <div key={item.num} className="flex gap-4 py-5 border-b border-[#ddd0b2]/60">
+                      <span className="w-9 h-9 rounded-full bg-[#fbf7ee] border-2 border-[#c2703f] flex items-center justify-center text-sm font-bold text-[#c2703f] shrink-0 mt-0.5">{item.num}</span>
                       <div>
-                        <strong className="text-[#f8fafc] block mb-1 text-sm">{item.title}</strong>
-                        <p className="text-sm text-[#94a3b8] leading-relaxed">{item.desc}</p>
+                        <strong className="text-[#201c14] block mb-1 text-sm">{item.title}</strong>
+                        <p className="text-sm text-[#5c5644] leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Flywheel Stress Testing: The Six Failure Conditions</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Flywheel Stress Testing: The Six Failure Conditions</h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
                   {[
-                    { title: "MODE_01", color: "#a855f7", subtitle: "External Value Anchor Fails", desc: "Fee revenue drops (competitor launches, market conditions change). Emission rewards now dominate real yield. Holders shift from long-term to mercenary. Loop reverses." },
-                    { title: "MODE_02", color: "#06b6d4", subtitle: "Governance Capture", desc: "A single entity or cartel accumulates supermajority veToken. Emissions directed to self-benefitting pools rather than protocol-optimal pools. Fee income concentrates, other holders exit." },
-                    { title: "MODE_03", color: "#f59e0b", subtitle: "Token Price Reflexivity", desc: "Emission APY quoted in USD requires rising token price to sustain. When price falls, APY falls, LPs exit, TVL falls, fees fall, price falls further. Reflexive death spiral." },
-                    { title: "MODE_04", color: "#a855f7", subtitle: "Liquidity Fragmentation", desc: "Gauge proliferation disperses emissions across too many pools. Each pool has insufficient liquidity for efficient trading. Fees per pool fall below LP costs. Mass exit." },
-                    { title: "MODE_05", color: "#06b6d4", subtitle: "Lock Expiry Cascade", desc: "Large cohort of veToken locks expire simultaneously. Holders don't re-lock (negative sentiment or alternative opportunities). Governance power vacuums, emission misdirection, TVL flight." },
-                    { title: "MODE_06", color: "#f59e0b", subtitle: "Bribe Market Collapse", desc: "Protocols stop paying bribes (treasuries depleted, bear market). veToken bribe yield collapses. Real yield reverts to fee-only. If fee yield insufficient, mass unlock and dump." },
+                    { title: "MODE_01", color: "#c2703f", subtitle: "External Value Anchor Fails", desc: "Fee revenue drops (competitor launches, market conditions change). Emission rewards now dominate real yield. Holders shift from long-term to mercenary. Loop reverses." },
+                    { title: "MODE_02", color: "#6f8fa3", subtitle: "Governance Capture", desc: "A single entity or cartel accumulates supermajority veToken. Emissions directed to self-benefitting pools rather than protocol-optimal pools. Fee income concentrates, other holders exit." },
+                    { title: "MODE_03", color: "#b98a3d", subtitle: "Token Price Reflexivity", desc: "Emission APY quoted in USD requires rising token price to sustain. When price falls, APY falls, LPs exit, TVL falls, fees fall, price falls further. Reflexive death spiral." },
+                    { title: "MODE_04", color: "#c2703f", subtitle: "Liquidity Fragmentation", desc: "Gauge proliferation disperses emissions across too many pools. Each pool has insufficient liquidity for efficient trading. Fees per pool fall below LP costs. Mass exit." },
+                    { title: "MODE_05", color: "#6f8fa3", subtitle: "Lock Expiry Cascade", desc: "Large cohort of veToken locks expire simultaneously. Holders don't re-lock (negative sentiment or alternative opportunities). Governance power vacuums, emission misdirection, TVL flight." },
+                    { title: "MODE_06", color: "#b98a3d", subtitle: "Bribe Market Collapse", desc: "Protocols stop paying bribes (treasuries depleted, bear market). veToken bribe yield collapses. Real yield reverts to fee-only. If fee yield insufficient, mass unlock and dump." },
                   ].map((panel) => (
-                    <div key={panel.title} className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden">
-                      <div className="flex items-center gap-3 px-5 py-4 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
+                    <div key={panel.title} className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden">
+                      <div className="flex items-center gap-3 px-5 py-4 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
                         <span className="w-2 h-2 rounded-full shrink-0" style={{ background: panel.color }} />
                         <span className="text-[10px] font-mono tracking-widest uppercase" style={{ color: panel.color }}>{panel.title}</span>
                       </div>
                       <div className="p-5">
-                        <strong className="text-[#f8fafc] text-sm block mb-2">{panel.subtitle}</strong>
-                        <p className="text-[13px] text-[#94a3b8] leading-relaxed">{panel.desc}</p>
+                        <strong className="text-[#201c14] text-sm block mb-2">{panel.subtitle}</strong>
+                        <p className="text-[13px] text-[#5c5644] leading-relaxed">{panel.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -484,25 +484,25 @@ Fee_Yield = Annual_Protocol_Fees × (Staker_Share) / Market_Cap
 
             {/* Section 5 */}
             <section id="reflexivity-risk">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">05 · Risk</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">05 · Risk</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Reflexivity Risk Quantification: When Flywheels Reverse
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   George Soros&apos;s reflexivity theory — that market participant beliefs affect the fundamentals they believe they are observing — applies with special force to token systems. In most token protocols, the token price is simultaneously a market output and a protocol input: it affects collateral ratios, emission APY attractiveness, governance participation incentives, and team/investor morale. This creates a structural reflexivity that must be quantified, not ignored.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Reflexivity Coefficient</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Reflexivity Coefficient</h3>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Reflexivity Risk Model — Price-TVL-Revenue Feedback Loop</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Reflexivity Risk Model — Price-TVL-Revenue Feedback Loop</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`// Define: P = token price, V = TVL, R = fee revenue, E = emission APY
 
 // Primary direction (positive market):
@@ -522,19 +522,19 @@ EDR = Emission_Value(t) / Fee_Revenue(t)
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Terra/LUNA: The Anatomy of Maximum Reflexivity</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Terra/LUNA: The Anatomy of Maximum Reflexivity</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The Terra/LUNA collapse of May 2022 — approximately $40 billion in market cap destroyed in 72 hours — represents the most thoroughly documented case of maximum reflexivity in token system history. The mechanism was elegant in its self-destruction: UST (the stablecoin) maintained its peg through algorithmic minting and burning of LUNA. When UST lost its peg, LUNA was minted to restore it. More LUNA supply → lower LUNA price → more LUNA needed to restore peg → hyperinflationary collapse of LUNA → complete loss of UST peg anchor.
                 </p>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  The reflexivity coefficient of the Terra system at the point of collapse was effectively infinite: there was no dampening mechanism. Any price perturbation in either direction amplified itself without bound. The <strong className="text-[#f8fafc]">Anchor Protocol&apos;s 20% APY on UST</strong> — funded by LUNA emission value — had an EDR well above 10 for most of its existence, providing a continuous signal of unsustainability that the market priced as &ldquo;high yield&rdquo; rather than &ldquo;reflexivity risk premium.&rdquo;
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  The reflexivity coefficient of the Terra system at the point of collapse was effectively infinite: there was no dampening mechanism. Any price perturbation in either direction amplified itself without bound. The <strong className="text-[#201c14]">Anchor Protocol&apos;s 20% APY on UST</strong> — funded by LUNA emission value — had an EDR well above 10 for most of its existence, providing a continuous signal of unsustainability that the market priced as &ldquo;high yield&rdquo; rather than &ldquo;reflexivity risk premium.&rdquo;
                 </p>
 
                 {/* Callout */}
-                <div className="bg-[rgba(239,68,68,0.06)] border border-[rgba(239,68,68,0.15)] rounded-xl p-6 md:p-8">
-                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#ef4444] mb-3">Risk Framework</div>
-                  <p className="text-sm text-[#94a3b8] leading-relaxed">
-                    <strong className="text-[#f8fafc]">EDR (Emission-Dominance Ratio) &gt; 3:</strong> Immediate structural review required. Protocol rewards are not covered by genuine economic activity. · <strong className="text-[#f8fafc]">Token price correlation to TVL &gt; 0.85 on 30-day rolling window:</strong> Reflexive price-TVL loop active. Stress test emission cliff scenarios. · <strong className="text-[#f8fafc]">Stablecoin peg deviation &gt; 0.3% for &gt;4 hours:</strong> For algo-stablecoin protocols, peg deviation is a leading indicator of reflexive collapse. · <strong className="text-[#f8fafc]">Governance participation &lt; 5% of eligible supply:</strong> Concentrated control risk.
+                <div className="bg-[rgba(176,67,47,0.06)] border border-[rgba(176,67,47,0.15)] rounded-xl p-6 md:p-8">
+                  <div className="text-[10px] font-mono tracking-widest uppercase text-[#b0432f] mb-3">Risk Framework</div>
+                  <p className="text-sm text-[#5c5644] leading-relaxed">
+                    <strong className="text-[#201c14]">EDR (Emission-Dominance Ratio) &gt; 3:</strong> Immediate structural review required. Protocol rewards are not covered by genuine economic activity. · <strong className="text-[#201c14]">Token price correlation to TVL &gt; 0.85 on 30-day rolling window:</strong> Reflexive price-TVL loop active. Stress test emission cliff scenarios. · <strong className="text-[#201c14]">Stablecoin peg deviation &gt; 0.3% for &gt;4 hours:</strong> For algo-stablecoin protocols, peg deviation is a leading indicator of reflexive collapse. · <strong className="text-[#201c14]">Governance participation &lt; 5% of eligible supply:</strong> Concentrated control risk.
                   </p>
                 </div>
               </div>
@@ -542,27 +542,27 @@ EDR = Emission_Value(t) / Fee_Revenue(t)
 
             {/* Section 6 */}
             <section id="agent-based">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">06 · Simulation</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">06 · Simulation</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Agent-Based Simulation for Tokenomics Stress Testing
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Agent-based modelling (ABM) is the computational approach that closes the gap between theoretical mechanism design and empirical token behaviour. Rather than assuming representative agents with known utility functions, ABM populates the protocol with heterogeneous agents — each with different beliefs, risk tolerances, and time horizons — and simulates their interactions over thousands of time steps.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Agent Taxonomy for Token System Simulation</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Agent Taxonomy for Token System Simulation</h3>
 
                 <div className="overflow-x-auto my-10">
                   <table className="w-full text-[13px] border-collapse">
                     <thead>
-                      <tr className="border-b border-[#1a1a2e]">
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Agent Type</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Objective Function</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">Behaviour Profile</th>
-                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#a855f7]">System Impact</th>
+                      <tr className="border-b border-[#ddd0b2]">
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Agent Type</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Objective Function</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">Behaviour Profile</th>
+                        <th className="text-left py-3 px-4 text-[10px] font-mono tracking-widest uppercase text-[#c2703f]">System Impact</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -574,26 +574,26 @@ EDR = Emission_Value(t) / Fee_Revenue(t)
                         ["Whale Accumulator", "Accumulate governance control", "Buys token on dips; locks maximum duration; votes self-beneficially", "Destabilising long-term: governance centralisation risk"],
                         ["Retail Participant", "Gain yield exposure; follow social signals", "Momentum-driven; reactive to price; influenced by community sentiment", "Amplifies both up and down moves; largest contributor to reflexivity"],
                       ].map((row, i) => (
-                        <tr key={i} className="border-b border-[#1a1a2e]/60 hover:bg-[rgba(124,58,237,0.03)] transition-colors">
-                          <td className="py-3 px-4 text-[#f8fafc] font-medium text-[13px]">{row[0]}</td>
-                          <td className="py-3 px-4 text-[#94a3b8]">{row[1]}</td>
-                          <td className="py-3 px-4 text-[#94a3b8]">{row[2]}</td>
-                          <td className={`py-3 px-4 ${row[3].includes("Stabilising") ? "text-[#10b981]" : row[3].includes("Mixed") ? "text-[#f59e0b]" : "text-[#ef4444]"}`}>{row[3]}</td>
+                        <tr key={i} className="border-b border-[#ddd0b2]/60 hover:bg-[rgba(194,112,63,0.03)] transition-colors">
+                          <td className="py-3 px-4 text-[#201c14] font-medium text-[13px]">{row[0]}</td>
+                          <td className="py-3 px-4 text-[#5c5644]">{row[1]}</td>
+                          <td className="py-3 px-4 text-[#5c5644]">{row[2]}</td>
+                          <td className={`py-3 px-4 ${row[3].includes("Stabilising") ? "text-[#74805e]" : row[3].includes("Mixed") ? "text-[#b98a3d]" : "text-[#b0432f]"}`}>{row[3]}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Python ABM Skeleton for Token Protocol Simulation</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Python ABM Skeleton for Token Protocol Simulation</h3>
 
                 {/* Code Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Python · cadCAD / Mesa</span>
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Illustrative / Simplified</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Python · cadCAD / Mesa</span>
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Illustrative / Simplified</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`# Simplified agent-based tokenomics simulation
 # Production implementations: cadCAD, Mesa, or custom NumPy
 
@@ -663,8 +663,8 @@ def simulate(state: ProtocolState,
                   </pre>
                 </div>
 
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
-                  Production ABM frameworks such as <strong className="text-[#f8fafc]">cadCAD</strong> (developed by BlockScience, used for MakerDAO and Uniswap v3 simulations) implement this logic at scale, running Monte Carlo sweeps across thousands of parameter combinations to identify regions of the parameter space where protocol stability breaks down. The outputs feed directly into emission schedule calibration, TVL floor targeting, and governance parameter setting.
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  Production ABM frameworks such as <strong className="text-[#201c14]">cadCAD</strong> (developed by BlockScience, used for MakerDAO and Uniswap v3 simulations) implement this logic at scale, running Monte Carlo sweeps across thousands of parameter combinations to identify regions of the parameter space where protocol stability breaks down. The outputs feed directly into emission schedule calibration, TVL floor targeting, and governance parameter setting.
                 </p>
               </div>
             </section>
@@ -672,25 +672,25 @@ def simulate(state: ProtocolState,
 
             {/* Section 7 */}
             <section id="game-theory">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">07 · Governance</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">07 · Governance</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Game Theory: Nash Equilibria in Token Governance
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Token governance is a repeated game with incomplete information, shifting player sets, and payoffs that depend on other players&apos; strategies in complex, non-linear ways. Classic game theory provides several frameworks that illuminate governance dynamics — and several that fail to capture the specific features of on-chain token voting.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">The Governance Coordination Problem</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">The Governance Coordination Problem</h3>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Token Governance as Coordination Game — Payoff Matrix</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Token Governance as Coordination Game — Payoff Matrix</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`// Two holder types: Protocol-Aligned (P) vs Rent-Seeking (R)
 // Strategy: Vote Protocol-Optimal (V_p) vs Vote Self-Benefit (V_r)
 
@@ -713,25 +713,25 @@ Nash Eq: If δ > α − β (defection advantage exceeds protocol value)
                   </pre>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#f8fafc] mt-8 mb-4">Bribery-Resistance and Resistant Mechanism Design</h3>
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <h3 className="text-lg font-bold text-[#201c14] mt-8 mb-4">Bribery-Resistance and Resistant Mechanism Design</h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The emergence of bribe markets (Votium, Hidden Hand, Paladin) demonstrates that any governance system with transferable voting power creates bribery opportunities. The theoretical solution — non-transferable, identity-bound voting weight — conflicts with the pseudonymity requirements of permissionless protocols. Practical approaches include:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
                   {[
-                    { title: "Bribery Mitigation Strategies", color: "#a855f7", items: ["Quadratic voting: voting power scales as √(tokens), reducing concentration effects. Sybil-vulnerable without identity, but effective in practice for known, bounded participant sets.", "Optimistic governance: proposals pass after delay unless challenged. Challengers post bonds; correct challenges are rewarded. Shifts governance from voting game to verification game.", "Governor-as-executor delay: time-lock all governance execution (48–72hrs minimum). Makes governance attacks visible before irreversible; allows community response.", "Rage-quit mechanisms: minority holders can exit at NAV before contested governance decisions execute. Directly addresses coercion risk; adopted by MolochDAO and descendants."] },
-                    { title: "Protocol-Level Anti-Gaming", color: "#06b6d4", items: ["Snapshot isolation: voting snapshots taken at block N, execution at block N+7200. Prevents flash-loan governance attacks by requiring persistent holdings.", "Conviction voting: voting power accumulates over time for a proposal. Early, sustained support outweighs last-minute whale votes. Implemented in Gardens (1Hive) and Commons Stack.", "Futarchy: governance decisions made by prediction markets on protocol metrics (Gnosis Protocol, Robin Hanson). Theoretically bribery-resistant; practically complex.", "Dual governance: staker veto rights over governance decisions during pending execution window (Lido's dual governance proposal). Separates proposal-making from veto authority."] },
+                    { title: "Bribery Mitigation Strategies", color: "#c2703f", items: ["Quadratic voting: voting power scales as √(tokens), reducing concentration effects. Sybil-vulnerable without identity, but effective in practice for known, bounded participant sets.", "Optimistic governance: proposals pass after delay unless challenged. Challengers post bonds; correct challenges are rewarded. Shifts governance from voting game to verification game.", "Governor-as-executor delay: time-lock all governance execution (48–72hrs minimum). Makes governance attacks visible before irreversible; allows community response.", "Rage-quit mechanisms: minority holders can exit at NAV before contested governance decisions execute. Directly addresses coercion risk; adopted by MolochDAO and descendants."] },
+                    { title: "Protocol-Level Anti-Gaming", color: "#6f8fa3", items: ["Snapshot isolation: voting snapshots taken at block N, execution at block N+7200. Prevents flash-loan governance attacks by requiring persistent holdings.", "Conviction voting: voting power accumulates over time for a proposal. Early, sustained support outweighs last-minute whale votes. Implemented in Gardens (1Hive) and Commons Stack.", "Futarchy: governance decisions made by prediction markets on protocol metrics (Gnosis Protocol, Robin Hanson). Theoretically bribery-resistant; practically complex.", "Dual governance: staker veto rights over governance decisions during pending execution window (Lido's dual governance proposal). Separates proposal-making from veto authority."] },
                   ].map((panel) => (
-                    <div key={panel.title} className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden">
-                      <div className="flex items-center gap-3 px-5 py-4 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
+                    <div key={panel.title} className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden">
+                      <div className="flex items-center gap-3 px-5 py-4 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
                         <span className="w-2 h-2 rounded-full shrink-0" style={{ background: panel.color }} />
-                        <span className="text-sm font-bold text-[#f8fafc]">{panel.title}</span>
+                        <span className="text-sm font-bold text-[#201c14]">{panel.title}</span>
                       </div>
                       <ul className="p-5 space-y-3">
                         {panel.items.map((item, idx) => (
-                          <li key={idx} className="text-[13px] text-[#94a3b8] flex items-start gap-2">
-                            <span className="text-[#64748b] mt-0.5 shrink-0">→</span>
+                          <li key={idx} className="text-[13px] text-[#5c5644] flex items-start gap-2">
+                            <span className="text-[#8a8268] mt-0.5 shrink-0">→</span>
                             {item}
                           </li>
                         ))}
@@ -744,14 +744,14 @@ Nash Eq: If δ > α − β (defection advantage exceeds protocol value)
 
             {/* Section 8 */}
             <section id="protocol-sustainability">
-              <div className="mb-10 pb-6 border-b border-[#1a1a2e]">
-                <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">08 · Synthesis</div>
-                <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+              <div className="mb-10 pb-6 border-b border-[#ddd0b2]">
+                <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">08 · Synthesis</div>
+                <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                   Protocol Sustainability: The Quantitative Framework
                 </h2>
               </div>
               <div className="space-y-6">
-                <p className="text-sm md:text-base text-[#94a3b8] leading-relaxed">
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Protocol sustainability is not a qualitative judgment — it is a quantitative condition that can be monitored, stress-tested, and managed. The framework below synthesises the preceding analysis into a set of measurable criteria with defined thresholds.
                 </p>
 
@@ -761,19 +761,19 @@ Nash Eq: If δ > α − β (defection advantage exceeds protocol value)
                     { val: "EDR", label: "Emission Dominance Ratio\nTarget: <1.0\n>3.0 = critical risk" },
                     { val: "TVL/MC", label: "TVL-to-MarketCap\nTarget: >0.5\n<0.1 = extraction mode" },
                   ].map((metric) => (
-                    <div key={metric.val} className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl p-6 text-center">
-                      <span className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#a855f7] to-[#3b82f6] bg-clip-text text-transparent block mb-3">{metric.val}</span>
-                      <span className="text-[11px] font-mono tracking-widest uppercase text-[#64748b] whitespace-pre-line">{metric.label}</span>
+                    <div key={metric.val} className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl p-6 text-center">
+                      <span className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#c2703f] to-[#93aab8] bg-clip-text text-transparent block mb-3">{metric.val}</span>
+                      <span className="text-[11px] font-mono tracking-widest uppercase text-[#8a8268] whitespace-pre-line">{metric.label}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Formula Block */}
-                <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl overflow-hidden my-8">
-                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a2e] bg-[rgba(255,255,255,0.02)]">
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Protocol Sustainability Score — Composite Index</span>
+                <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl overflow-hidden my-8">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-[#ddd0b2] bg-[rgba(32,28,20,0.02)]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Protocol Sustainability Score — Composite Index</span>
                   </div>
-                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#94a3b8]">
+                  <pre className="p-5 text-[13px] leading-relaxed overflow-x-auto text-[#5c5644]">
 {`PSS = w₁ × FeeYield + w₂ × (1/EDR) + w₃ × DecentralisationScore + w₄ × GovernanceHealth
 
 // FeeYield = annualised_fees / market_cap
@@ -789,18 +789,18 @@ Nash Eq: If δ > α − β (defection advantage exceeds protocol value)
             </section>
 
             {/* Conclusion */}
-            <section className="bg-[#0a0a12] border border-[#1a1a2e] rounded-2xl p-10 md:p-14 text-center">
-              <div className="text-[10px] font-mono tracking-widest uppercase text-[#a855f7] mb-4">Synthesis</div>
-              <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4">
+            <section className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-2xl p-10 md:p-14 text-center">
+              <div className="text-[10px] font-mono tracking-widest uppercase text-[#c2703f] mb-4">Synthesis</div>
+              <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4">
                 Tokenomics Is Engineering, Not Marketing
               </h2>
-              <p className="text-sm text-[#94a3b8] leading-relaxed max-w-[800px] mx-auto mb-6">
+              <p className="text-sm text-[#5c5644] leading-relaxed max-w-[800px] mx-auto mb-6">
                 The tokens that will define the next decade of decentralised finance will not be the ones with the most elegant whitepapers or the most aggressive emission schedules. They will be the ones whose mechanism designers asked — and answered quantitatively — the questions that matter: Does this mechanism satisfy incentive compatibility for the agents we expect to attract? Is our emission schedule anchored to real fee revenue growth, or are we borrowing against future token holders? What is our reflexivity coefficient, and what happens when it goes above one?
               </p>
-              <p className="text-sm text-[#94a3b8] leading-relaxed max-w-[800px] mx-auto mb-6">
-                <strong className="text-[#f8fafc]">Ve-tokenomics</strong> is not a template to copy — it is a design primitive with specific properties, specific failure modes, and specific requirements for the underlying fee revenue that must anchor it. <strong className="text-[#f8fafc]">Emission curves</strong> are not aesthetic choices — they are monetary policy, with the same consequences for getting wrong. <strong className="text-[#f8fafc]">Flywheel mechanics</strong> are not marketing narratives — they are system dynamics that must be modelled, simulated, and stress-tested before deployment.
+              <p className="text-sm text-[#5c5644] leading-relaxed max-w-[800px] mx-auto mb-6">
+                <strong className="text-[#201c14]">Ve-tokenomics</strong> is not a template to copy — it is a design primitive with specific properties, specific failure modes, and specific requirements for the underlying fee revenue that must anchor it. <strong className="text-[#201c14]">Emission curves</strong> are not aesthetic choices — they are monetary policy, with the same consequences for getting wrong. <strong className="text-[#201c14]">Flywheel mechanics</strong> are not marketing narratives — they are system dynamics that must be modelled, simulated, and stress-tested before deployment.
               </p>
-              <p className="text-sm text-[#94a3b8] leading-relaxed max-w-[800px] mx-auto">
+              <p className="text-sm text-[#5c5644] leading-relaxed max-w-[800px] mx-auto">
                 The tools exist: cadCAD for agent-based simulation, the mechanism design literature for incentive compatibility analysis, quantitative finance frameworks for reflexivity risk quantification. The protocols that use them will build systems that survive. The ones that don&apos;t will generate the case studies that populate the next iteration of this analysis.
               </p>
             </section>
@@ -849,11 +849,11 @@ Nash Eq: If δ > α − β (defection advantage exceeds protocol value)
 
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
-          <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
-            <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
+          <div className="border-t border-[#ddd0b2] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
               Tokenomics Engineering: Mechanism Design, Game Theory & Quantitative Sustainability · May 2026
             </p>
-            <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
+            <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
               For educational use · Not financial or legal advice
             </p>
           </div>

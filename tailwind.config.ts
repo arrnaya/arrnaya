@@ -9,6 +9,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        display: ["var(--font-display)", "Space Grotesk", "Inter", "sans-serif"],
       },
     },
   },

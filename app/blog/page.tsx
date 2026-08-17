@@ -200,41 +200,31 @@ export default function BlogPage() {
       <Navbar />
 
       {/* Blog Hero */}
-      <section
-        className="relative pt-32 pb-32 overflow-hidden"
-        style={{
-          minHeight: "60vh",
-          backgroundImage: "url('/arrnaya-emblem.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b]/85 via-[#0f0a1e]/80 to-[#030308]/90" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030308]/40 to-[#030308]" />
-
+      <section className="relative pt-40 pb-20 overflow-hidden bg-[var(--bg)]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--sage-glow)] via-transparent to-[var(--accent-glow)]" />
         <div className="relative z-10 max-w-[1280px] mx-auto px-6 text-center">
-          <div className="text-xs font-semibold tracking-[2px] uppercase text-[#8b5cf6] mb-4">Blog</div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+          <div className="text-[11px] font-semibold tracking-[3px] uppercase text-[var(--accent)] mb-4">Blog</div>
+          <h1 className="font-display text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-[var(--text)] mb-6">
             Ideas, Insights & Innovation
           </h1>
-          <p className="text-base text-[#94a3b8] max-w-[600px] mx-auto leading-relaxed">
+          <p className="text-base text-[var(--text-muted)] max-w-[600px] mx-auto leading-relaxed">
             Exploring the power of AI and Blockchain to transform industries, businesses, and everyday life. Practical insights for professionals across spheres.
           </p>
         </div>
       </section>
 
       {/* Blog Grid */}
-      <section className="max-w-[1280px] mx-auto px-6 py-24">
+      <section className="max-w-[1280px] mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post, index) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group flex flex-col bg-[#0a0a12] border border-[#1a1a2e] rounded-2xl overflow-hidden hover:border-[#252542] hover:-translate-y-1 transition-all no-underline"
+              className="group flex flex-col bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl overflow-hidden hover:border-[var(--accent)] hover:-translate-y-1 transition-all no-underline"
             >
               {/* Card Header / Thumbnail Area */}
-              <div className="h-48 bg-gradient-to-br from-[#1e1b4b] to-[#0f0a1e] flex items-center justify-center shrink-0">
-                <div className="w-14 h-14 flex items-center justify-center bg-[rgba(124,58,237,0.15)] border border-[rgba(124,58,237,0.25)] rounded-2xl text-[#8b5cf6] group-hover:scale-110 transition-transform">
+              <div className="h-48 bg-[var(--bg-alt)] flex items-center justify-center shrink-0">
+                <div className="w-14 h-14 flex items-center justify-center bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl text-[var(--accent)] group-hover:scale-110 transition-transform">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
                     <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
                     <polyline points="14 2 14 8 20 8" />
@@ -245,20 +235,20 @@ export default function BlogPage() {
               {/* Card Body */}
               <div className="flex flex-col flex-1 p-8">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <span className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1.5 rounded-full bg-[rgba(124,58,237,0.1)] text-[#8b5cf6] border border-[rgba(124,58,237,0.2)]">
+                  <span className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1.5 rounded-full bg-[var(--accent-glow)] text-[var(--accent)]">
                     {post.category}
                   </span>
-                  <span className="text-[11px] text-[#64748b]">{post.date}</span>
+                  <span className="text-[11px] text-[var(--text-dim)]">{post.date}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#f8fafc] mb-3 group-hover:text-[#a855f7] transition-colors leading-snug">
+                <h3 className="text-lg font-bold text-[var(--text)] mb-3 group-hover:text-[var(--accent)] transition-colors leading-snug">
                   {post.title}
                 </h3>
-                <p className="text-[13px] text-[#64748b] leading-relaxed mb-6 flex-1">
+                <p className="text-[13px] text-[var(--text-dim)] leading-relaxed mb-6 flex-1">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center justify-between mt-auto pt-6 border-t border-[#1a1a2e]">
-                  <span className="text-[11px] text-[#64748b]">{post.readTime}</span>
-                  <span className="flex items-center gap-1.5 text-sm font-semibold text-[#8b5cf6]">
+                <div className="flex items-center justify-between mt-auto pt-6 border-t border-[var(--border)]">
+                  <span className="text-[11px] text-[var(--text-dim)]">{post.readTime}</span>
+                  <span className="flex items-center gap-1.5 text-sm font-semibold text-[var(--accent)]">
                     Read
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform">
                       <path d="M5 12h14" /><path d="M12 5l7 7-7 7" />

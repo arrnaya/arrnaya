@@ -45,7 +45,7 @@ const phases = [
     tag: "Days 1–6 · Foundations",
     title: "Understanding AI & Its Relevance to CA Practice",
     desc: "Build conceptual clarity on AI, machine learning, and automation — grounded in the Indian accounting context.",
-    color: "#1a4a6b",
+    color: "#6f8fa3",
     days: [
       { day: "01", title: "What Is AI? A CA's Orientation", items: ["AI vs ML vs Automation — what differs", "How AI processes unstructured financial data", "Current AI adoption in Big 4 India firms"], output: "Write a 1-page note on 3 AI use cases in your own practice area" },
       { day: "02", title: "The Indian Regulatory Landscape & AI", items: ["ICAI's stance on AI and technology in assurance", "MCA21 v3, Faceless Assessment — government AI", "DPDP Act 2023 and data implications for CAs"], output: "DPDP compliance checklist for client data handled by AI tools" },
@@ -60,7 +60,7 @@ const phases = [
     tag: "Days 7–13 · AI Tools in Practice",
     title: "Hands-On Tools for Daily CA Workflows",
     desc: "Practical application of AI tools that a working CA can deploy immediately — document analysis, research, drafting.",
-    color: "#c8500a",
+    color: "#c2703f",
     days: [
       { day: "07", title: "AI-Powered Document Review", items: ["Upload & interrogate financial statements with AI", "Contract review using Claude / ChatGPT", "Extracting data from scanned PDFs (OCR + AI)"], output: "Review a client P&L using AI — note discrepancies found" },
       { day: "08", title: "AI for GST & Income Tax Research", items: ["Querying AI on circular interpretations and case law", "Using Perplexity / Claude for CBDT notification research", "Cross-verifying AI output with IncomeTaxIndia.gov.in"], output: "AI-assisted research note on a recent GST AAR ruling" },
@@ -76,7 +76,7 @@ const phases = [
     tag: "Days 14–20 · Audit & Assurance",
     title: "AI-Augmented Audit in the Indian Context",
     desc: "Transform your audit methodology — from risk assessment to report drafting — using AI and data analytics aligned with SA Standards.",
-    color: "#b8962e",
+    color: "#b98a3d",
     days: [
       { day: "14", title: "AI-Based Risk Assessment", items: ["Using AI to identify anomalies in trial balances", "Benford's Law automation for fraud detection", "Linking SA 315 risk factors to AI screening"], output: "Run Benford's Law analysis on a sample dataset; document findings" },
       { day: "15", title: "Continuous Auditing & Real-Time Monitoring", items: ["Concept of continuous assurance vs periodic audit", "SAP/Oracle built-in audit analytics tools", "CAAT tools — ACL (Galvanize), IDEA for Indian CAs"], output: "Design a continuous monitoring checklist for a manufacturing client" },
@@ -92,7 +92,7 @@ const phases = [
     tag: "Days 21–26 · Taxation",
     title: "AI in Indian Taxation — GST, Income Tax & Transfer Pricing",
     desc: "Leverage AI to navigate India's complex and frequently changing tax landscape with speed and accuracy.",
-    color: "#4a7c59",
+    color: "#74805e",
     days: [
       { day: "21", title: "GST Compliance Automation", items: ["AI-powered GSTR-2B reconciliation tools", "ITC mismatch detection using ClearTax/GSTN Analytics", "E-invoice AI validation and IRN auto-generation"], output: "Perform a mock GSTR-2A vs 2B reconciliation using an AI tool" },
       { day: "22", title: "Faceless Assessment & AI Tax Filing", items: ["How income tax faceless system uses AI for scrutiny", "AI-assisted ITR preparation and AIS reconciliation", "Responding to AI-generated notices effectively"], output: "Draft a response template to a faceless assessment notice" },
@@ -107,7 +107,7 @@ const phases = [
     tag: "Days 27–30 · Advisory, Ethics & Future",
     title: "Positioning as an AI-Enabled Advisor",
     desc: "Synthesize your learning, address ethical obligations, and build a strategy for long-term AI integration in your CA practice.",
-    color: "#7c4a7c",
+    color: "#c2703f",
     days: [
       { day: "27", title: "CFO Advisory & FP&A with AI", items: ["AI-powered forecasting and cash flow modelling", "Real-time dashboards for finance leadership (Power BI AI)", "Offering Virtual CFO services enhanced by AI"], output: "Build a 12-month AI-assisted cash flow forecast for a sample MSME" },
       { day: "28", title: "Ethics, Liability & Professional Standards", items: ["ICAI Code of Ethics — AI disclosure obligations", "Who is liable when AI gives wrong tax advice?", "Client consent, data privacy, and AI tool agreements"], output: "Draft an AI disclosure clause for client engagement letters" },
@@ -157,47 +157,47 @@ export default function BlogPost() {
       <article className="pt-20">
         <header className="relative py-20 overflow-hidden">
           {/* Deep purple base */}
-          <div className="absolute inset-0 bg-[#0f0524]" />
+          <div className="absolute inset-0 bg-[#ece1cc]" />
           {/* Purple glow spots */}
-          <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] rounded-full bg-[#7c3aed] opacity-20 blur-[120px]" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-[#a855f7] opacity-15 blur-[100px]" />
-          <div className="absolute top-[30%] right-[20%] w-[30%] h-[30%] rounded-full bg-[#3b82f6] opacity-10 blur-[80px]" />
+          <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] rounded-full bg-[#c2703f] opacity-20 blur-[120px]" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-[#c2703f] opacity-15 blur-[100px]" />
+          <div className="absolute top-[30%] right-[20%] w-[30%] h-[30%] rounded-full bg-[#93aab8] opacity-10 blur-[80px]" />
           {/* Sparkle dots */}
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 20% 30%, rgba(168,85,247,0.4) 0px, rgba(168,85,247,0.4) 1px, transparent 1px),
-                              radial-gradient(circle at 70% 20%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1.5px, transparent 1.5px),
-                              radial-gradient(circle at 40% 70%, rgba(168,85,247,0.35) 0px, rgba(168,85,247,0.35) 1px, transparent 1px),
-                              radial-gradient(circle at 80% 60%, rgba(59,130,246,0.25) 0px, rgba(59,130,246,0.25) 1px, transparent 1px),
-                              radial-gradient(circle at 15% 80%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1.5px, transparent 1.5px),
-                              radial-gradient(circle at 60% 50%, rgba(168,85,247,0.2) 0px, rgba(168,85,247,0.2) 2px, transparent 2px),
-                              radial-gradient(circle at 90% 85%, rgba(124,58,237,0.3) 0px, rgba(124,58,237,0.3) 1px, transparent 1px),
-                              radial-gradient(circle at 35% 15%, rgba(59,130,246,0.2) 0px, rgba(59,130,246,0.2) 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(circle at 20% 30%, rgba(194,112,63,0.4) 0px, rgba(194,112,63,0.4) 1px, transparent 1px),
+                              radial-gradient(circle at 70% 20%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1.5px, transparent 1.5px),
+                              radial-gradient(circle at 40% 70%, rgba(194,112,63,0.35) 0px, rgba(194,112,63,0.35) 1px, transparent 1px),
+                              radial-gradient(circle at 80% 60%, rgba(147,170,184,0.25) 0px, rgba(147,170,184,0.25) 1px, transparent 1px),
+                              radial-gradient(circle at 15% 80%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1.5px, transparent 1.5px),
+                              radial-gradient(circle at 60% 50%, rgba(194,112,63,0.2) 0px, rgba(194,112,63,0.2) 2px, transparent 2px),
+                              radial-gradient(circle at 90% 85%, rgba(194,112,63,0.3) 0px, rgba(194,112,63,0.3) 1px, transparent 1px),
+                              radial-gradient(circle at 35% 15%, rgba(147,170,184,0.2) 0px, rgba(147,170,184,0.2) 1px, transparent 1px)`,
             backgroundSize: '250px 250px, 300px 300px, 200px 200px, 350px 350px, 280px 280px, 400px 400px, 220px 220px, 320px 320px'
           }} />
           {/* Subtle gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#030308]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#f5efe2]" />
 
           <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-28 md:py-36">
             <div className="flex flex-wrap items-center gap-3 mb-10">
-              <span className="text-[11px] font-semibold tracking-wider uppercase px-4 py-2 rounded-full bg-[rgba(124,58,237,0.15)] text-[#a855f7] border border-[rgba(168,85,247,0.25)] backdrop-blur-sm">
+              <span className="text-[11px] font-semibold tracking-wider uppercase px-4 py-2 rounded-full bg-[rgba(194,112,63,0.15)] text-[#c2703f] border border-[rgba(194,112,63,0.25)] backdrop-blur-sm">
                 India · Chartered Accountancy · 2026
               </span>
-              <span className="text-[11px] text-[#94a3b8]">30 Days · 5 Phases · ICAI Aligned</span>
+              <span className="text-[11px] text-[#5c5644]">30 Days · 5 Phases · ICAI Aligned</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-8">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               AI for the<br />
-              <span className="bg-gradient-to-r from-[#a855f7] to-[#3b82f6] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#c2703f] to-[#93aab8] bg-clip-text text-transparent">
                 Modern CA
               </span>
             </h1>
-            <p className="text-base md:text-lg text-[#94a3b8] max-w-[600px] leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-[#5c5644] max-w-[600px] leading-relaxed mb-10">
               A structured 30-day learning roadmap for practising Chartered Accountants in India — covering AI foundations, audit automation, tax technology, and advisory transformation.
             </p>
             <div className="flex flex-wrap gap-3">
               {["30 Days", "5 Phases", "India-Specific", "ICAI Aligned"].map((badge) => (
                 <span
                   key={badge}
-                  className="text-[10px] font-mono tracking-widest uppercase border border-[rgba(168,85,247,0.25)] text-[#94a3b8] px-4 py-2 rounded-sm bg-[rgba(124,58,237,0.05)]"
+                  className="text-[10px] font-mono tracking-widest uppercase border border-[rgba(194,112,63,0.25)] text-[#5c5644] px-4 py-2 rounded-sm bg-[rgba(194,112,63,0.05)]"
                 >
                   {badge}
                 </span>
@@ -207,17 +207,17 @@ export default function BlogPost() {
         </header>
 
         {/* Legend */}
-        <div className="bg-[#0a0a12] border-b border-[#1a1a2e]">
+        <div className="bg-[#fbf7ee] border-b border-[#ddd0b2]">
           <div className="max-w-[1200px] mx-auto px-6 py-8 flex flex-wrap items-center gap-4 md:gap-6">
-            <span className="text-[10px] font-mono tracking-widest uppercase text-[#64748b]">Track</span>
+            <span className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268]">Track</span>
             {[
-              { color: "#1a4a6b", label: "Foundations" },
-              { color: "#c8500a", label: "AI Tools" },
-              { color: "#b8962e", label: "Audit & Assurance" },
-              { color: "#4a7c59", label: "Taxation" },
-              { color: "#7c4a7c", label: "Advisory & Ethics" },
+              { color: "#6f8fa3", label: "Foundations" },
+              { color: "#c2703f", label: "AI Tools" },
+              { color: "#b98a3d", label: "Audit & Assurance" },
+              { color: "#74805e", label: "Taxation" },
+              { color: "#c2703f", label: "Advisory & Ethics" },
             ].map((track) => (
-              <div key={track.label} className="flex items-center gap-2 text-xs text-[#64748b]">
+              <div key={track.label} className="flex items-center gap-2 text-xs text-[#8a8268]">
                 <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: track.color }} />
                 {track.label}
               </div>
@@ -231,18 +231,18 @@ export default function BlogPost() {
             {phases.map((phase) => (
               <section key={phase.num}>
                 {/* Phase Header */}
-                <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-start mb-16 pb-10 py-10 border-b-2 border-[#1a1a2e]">
-                  <span className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none text-[#1a1a2e] shrink-0 select-none">
+                <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-start mb-16 pb-10 py-10 border-b-2 border-[#ddd0b2]">
+                  <span className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none text-[#ddd0b2] shrink-0 select-none">
                     {phase.num}
                   </span>
                   <div className="min-w-0 pt-1">
-                    <div className="text-[10px] font-mono tracking-widest uppercase text-[#64748b] mb-3">
+                    <div className="text-[10px] font-mono tracking-widest uppercase text-[#8a8268] mb-3">
                       {phase.tag}
                     </div>
-                    <h2 className="text-xl md:text-[26px] font-bold text-[#f8fafc] mb-4 leading-snug">
+                    <h2 className="font-display text-xl md:text-[26px] font-bold text-[#201c14] mb-4 leading-snug">
                       {phase.title}
                     </h2>
-                    <p className="text-sm text-[#64748b] max-w-[600px] leading-relaxed">{phase.desc}</p>
+                    <p className="text-sm text-[#8a8268] max-w-[600px] leading-relaxed">{phase.desc}</p>
                   </div>
                 </div>
 
@@ -251,28 +251,28 @@ export default function BlogPost() {
                   {phase.days.map((day) => (
                     <div
                       key={day.day}
-                      className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl p-8 relative overflow-hidden hover:border-[#252542] hover:-translate-y-1 transition-all duration-300 group"
+                      className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl p-8 relative overflow-hidden hover:border-[#c7b790] hover:-translate-y-1 transition-all duration-300 group"
                     >
                       <div
                         className="absolute top-0 left-0 w-[3px] h-full"
                         style={{ background: phase.color }}
                       />
-                      <div className="text-[11px] font-mono tracking-widest uppercase text-[#64748b] mb-5">
+                      <div className="text-[11px] font-mono tracking-widest uppercase text-[#8a8268] mb-5">
                         Day {day.day}
                       </div>
-                      <h3 className="text-base font-bold text-[#f8fafc] mb-5 leading-snug">
+                      <h3 className="text-base font-bold text-[#201c14] mb-5 leading-snug">
                         {day.title}
                       </h3>
                       <ul className="list-none space-y-3 mb-6">
                         {day.items.map((item, i) => (
-                          <li key={i} className="text-sm text-[#94a3b8] pl-5 relative leading-relaxed">
-                            <span className="absolute left-0 top-[5px] text-[10px] text-[#64748b]">→</span>
+                          <li key={i} className="text-sm text-[#5c5644] pl-5 relative leading-relaxed">
+                            <span className="absolute left-0 top-[5px] text-[10px] text-[#8a8268]">→</span>
                             {item}
                           </li>
                         ))}
                       </ul>
-                      <div className="text-[11px] font-mono bg-[rgba(124,58,237,0.06)] px-4 py-3 rounded-md text-[#64748b] border-l-[3px] border-[#1a1a2e] leading-relaxed">
-                        <strong className="text-[#f8fafc] font-medium">Output:</strong> {day.output}
+                      <div className="text-[11px] font-mono bg-[rgba(194,112,63,0.06)] px-4 py-3 rounded-md text-[#8a8268] border-l-[3px] border-[#ddd0b2] leading-relaxed">
+                        <strong className="text-[#201c14] font-medium">Output:</strong> {day.output}
                       </div>
                     </div>
                   ))}
@@ -281,42 +281,42 @@ export default function BlogPost() {
             ))}
 
             {/* Tools Section */}
-            <section className="bg-[#0a0a12] border border-[#1a1a2e] rounded-2xl p-10 md:p-14">
-              <h2 className="text-xl md:text-[26px] font-bold text-[#a855f7] mb-3">
+            <section className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-2xl p-10 md:p-14">
+              <h2 className="font-display text-xl md:text-[26px] font-bold text-[#c2703f] mb-3">
                 Essential AI Tools for Indian CAs
               </h2>
-              <p className="text-sm text-[#64748b] mb-10 leading-relaxed">
+              <p className="text-sm text-[#8a8268] mb-10 leading-relaxed">
                 Curated stack — free to paid tier, India-context validated
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {tools.map((tool) => (
                   <div
                     key={tool.name}
-                    className="border border-[rgba(200,180,100,0.12)] rounded-lg p-4 hover:border-[rgba(200,180,100,0.3)] transition-colors bg-[rgba(255,255,255,0.01)]"
+                    className="border border-[rgba(185,138,61,0.12)] rounded-lg p-4 hover:border-[rgba(185,138,61,0.3)] transition-colors bg-[rgba(32,28,20,0.01)]"
                   >
-                    <div className="text-xs font-mono font-medium text-[#a855f7] mb-2">
+                    <div className="text-xs font-mono font-medium text-[#c2703f] mb-2">
                       {tool.name}
                     </div>
-                    <div className="text-xs text-[#64748b] leading-relaxed">{tool.use}</div>
+                    <div className="text-xs text-[#8a8268] leading-relaxed">{tool.use}</div>
                   </div>
                 ))}
               </div>
             </section>
 
             {/* ICAI Note */}
-            <div className="bg-[#0a0a12] border border-[#1a1a2e] rounded-xl p-8 md:p-10 flex gap-6">
-              <div className="w-1 rounded bg-[#1a4a6b] shrink-0" />
+            <div className="bg-[#fbf7ee] border border-[#ddd0b2] rounded-xl p-8 md:p-10 flex gap-6">
+              <div className="w-1 rounded bg-[#6f8fa3] shrink-0" />
               <div>
-                <h3 className="text-lg font-bold text-[#f8fafc] mb-4">
+                <h3 className="text-lg font-bold text-[#201c14] mb-4">
                   ICAI & Continuing Education
                 </h3>
-                <p className="text-sm text-[#94a3b8] leading-relaxed">
+                <p className="text-sm text-[#5c5644] leading-relaxed">
                   The Institute of Chartered Accountants of India (ICAI) has been actively incorporating technology and AI into its curriculum. Refer to{" "}
                   <a
                     href="https://www.icai.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#3b82f6] font-medium hover:underline"
+                    className="text-[#93aab8] font-medium hover:underline"
                   >
                     icai.org
                   </a>{" "}
@@ -353,11 +353,11 @@ export default function BlogPost() {
 
         {/* Post Footer */}
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
-          <div className="border-t border-[#1a1a2e] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
-            <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
+          <div className="border-t border-[#ddd0b2] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
               30-Day AI Roadmap for Indian Chartered Accountants · Apr 2026
             </p>
-            <p className="text-[11px] font-mono text-[#64748b] tracking-wider">
+            <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
               For educational use · Verify regulatory content with ICAI / CBDT / GSTN
             </p>
           </div>
