@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
@@ -71,23 +70,28 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="relative pt-16 overflow-hidden bg-[var(--bg)]">
+      <section className="relative pt-16 overflow-hidden bg-[var(--bg)] lg:min-h-[740px] xl:min-h-[820px] lg:flex lg:items-center">
+        {/* Full-bleed background — desktop/large only, where there's room for text + person to coexist without overlap */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/from-blocks-to-blockchain-buiding-defi.png')" }}
-        />
-        <div
-          className="absolute inset-0"
+          className="hidden lg:block absolute inset-0 bg-cover"
           style={{
-            background:
-              "linear-gradient(90deg, var(--bg) 0%, rgba(245,239,226,0.94) 32%, rgba(245,239,226,0.6) 55%, rgba(245,239,226,0.15) 78%, transparent 100%)",
+            backgroundImage: "url('/hero-section-bg-new.png')",
+            backgroundPosition: "right center",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--bg)]" />
+        <div
+          className="hidden lg:block absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, var(--bg) 0%, rgba(245,239,226,0.94) 30%, rgba(245,239,226,0.55) 50%, rgba(245,239,226,0.1) 68%, transparent 82%)",
+          }}
+        />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--bg)]" />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-br from-[var(--dusty-blue-glow)] via-transparent to-[var(--accent-glow)]" />
 
-        <div className="relative z-10 max-w-[1280px] mx-auto px-6 py-20 md:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center lg:items-end">
-            {/* Left: Text Content */}
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 py-20 md:py-28 w-full">
+          <div className="max-w-[600px]">
+            {/* Text Content */}
             <div className="text-left">
               <div className="text-[11px] font-semibold tracking-[3px] uppercase text-[var(--accent)] mb-4">
                 CTO · Chief Blockchain Officer
@@ -143,20 +147,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right: Portrait */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-[280px] h-[187px] sm:w-[380px] sm:h-[253px] lg:w-[500px] lg:h-[333px] xl:w-[580px] xl:h-[387px]">
-                <Image
-                  src="/Arrnaya.png"
-                  alt="Arun Kumar Yadav — CTO & Chief Blockchain Officer"
-                  fill
-                  priority
-                  className="object-contain object-bottom drop-shadow-2xl"
-                  sizes="(max-width: 640px) 280px, (max-width: 1024px) 380px, (max-width: 1280px) 500px, 580px"
-                />
-              </div>
-            </div>
+          {/* Mobile/tablet — same hero graphic shown at full width below the text, uncropped and non-overlapping */}
+          <div className="lg:hidden mt-10 rounded-3xl overflow-hidden border border-[var(--border)]">
+            <div
+              className="w-full bg-cover bg-center"
+              style={{
+                backgroundImage: "url('/hero-section-bg-new.png')",
+                aspectRatio: "3 / 2",
+              }}
+            />
           </div>
         </div>
       </section>
