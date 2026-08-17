@@ -8,11 +8,11 @@
 ## 🟢 System Status
 
 ```
-Last session:        2026-08-05
-Last post published: Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis (2026-08-05)
-Last pillar used:    AI & Economics (user-provided topic)
+Last session:        2026-08-17
+Last post published: The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility (2026-08-17)
+Last pillar used:    AI & Blockchain (user-provided topic — ERC agent standards)
 Next pillar due:     Payments & Cards OR Regulatory
-Posts published (all time): 12
+Posts published (all time): 13
 Posts archived (all time):  0
 Current streak:      1 day
 Approval pending:    None
@@ -36,6 +36,7 @@ Approval pending:    None
 | 10 | 2026-06-16 | The Learning Loop Moat: AI Agents in Finance and Treasury Management | AI & Finance | `ai-agents-the-learning-loop-moat` | — | PUBLISHED |
 | 11 | 2026-06-29 | Banking 5.0: AI-Human Collaboration, Embedded Finance, and the Future of Financial Services | Future of Finance | `banking-5-0-ai-human-collaboration` | — | PUBLISHED |
 | 12 | 2026-08-05 | Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis | AI & Economics | `elon-musk-money-wont-matter-2036` | — | PUBLISHED |
+| 13 | 2026-08-17 | The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility | AI & Blockchain | `ai-agent-trust-stack-erc-standards` | — | PUBLISHED |
 
 ---
 
@@ -93,6 +94,7 @@ Approval pending:    None
 - AI agents in finance / treasury management / autonomous DeFi / smart treasury / institutional learning loops / model-agnostic finance
 - Banking 5.0 / Industry 5.0 financial services / AI-human collaboration in banking / embedded finance / BaaS / Open Banking ecosystems / 4Ps and 10Ps framework
 - Musk post-scarcity thesis / "money won't matter by 2036" / AI-driven deflation / Baumol effect / Engels' pause / UHI vs UBI / distribution economics / Economist interview dissection
+- AI agent trust standards / ERC-7662 (agent NFTs) / ERC-7857 (verifiable private metadata transfer, TEE/ZKP) / ERC-8004 (Trustless Agents identity registry) / ERC-8126 (agent verification & risk scoring) / ERC-8196 (policy-bound agentic wallet execution) / hosting trust trap / entropy commit-reveal / agent audit trails
 
 ### Available — High Priority
 - Crypto Debit Card Infrastructure (BIN sponsorship, card networks, programme management)
@@ -164,10 +166,19 @@ Approval pending:    None
 | AI-Augmented Web3 Infrastructure | https://www.arrnaya.com/blog/ai-augmented-web3-infrastructure |
 | The Learning Loop Moat: AI Agents in Finance and Treasury | https://www.arrnaya.com/blog/ai-agents-the-learning-loop-moat |
 | Musk Post-Scarcity Thesis (Money Won't Matter by 2036) | https://www.arrnaya.com/blog/elon-musk-money-wont-matter-2036 |
+| The Trust Stack: ERC-7662, ERC-7857, ERC-8126 & ERC-8196 | https://www.arrnaya.com/blog/ai-agent-trust-stack-erc-standards |
 
 ---
 
 ## 📋 Decisions Log
+
+### 2026-08-17 — AI Agent Trust Stack (ERC-7662/7857/8126/8196) Blog Published
+**Decision:** Publish 13th blog post: The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility
+**Scope:** Created `/app/blog/ai-agent-trust-stack-erc-standards/page.tsx`, updated blog index, sitemap, memory.md
+**Source:** User-provided EIP links (eip-7662, eip-7857, eip-8126, eip-8196), researched directly via WebFetch against eips.ethereum.org for interfaces, structs, events, and preamble status (7662 Draft, 7857/8126/8196 Final, foundational ERC-8004 Draft). Also fetched ERC-8004 for identity-registry context since 8126/8196 formally require it.
+**SEO:** 20 keywords, OG tags, Twitter cards, JSON-LD BlogPosting + FAQPage schema, direct outbound links to all four EIP source pages plus EIP-8004/EIP-3009/EIP-4337
+**Design:** Purple sparkling hero with cyan/teal accent (AI theme per pattern rule), 5-column layer table, 3 interface/struct code blocks, TEE vs ZKP comparison table, policy field table, 5-phase reference architecture with composed pseudocode, 4-panel failure-mode grid, 5-phase roadmap, 9 FAQ items
+**Status:** COMPLETE
 
 ### 2026-08-05 — Musk Post-Scarcity Thesis Blog Published
 **Decision:** Publish 12th blog post: Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis  

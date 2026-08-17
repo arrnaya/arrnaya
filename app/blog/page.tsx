@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "ai-agent-trust-stack-erc-standards",
+    title: "The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility",
+    excerpt:
+      "A technical field guide to the emerging ERC standard stack for autonomous agents — encrypted agent IP under ERC-7662 and ERC-7857, multi-dimensional risk scoring under ERC-8126, and policy-bound execution under ERC-8196. How anonymous agents get verifiable credibility without a known identity.",
+    category: "AI & Blockchain",
+    date: "August 2026",
+    readTime: "30 min read",
+  },
+  {
     slug: "elon-musk-money-wont-matter-2036",
     title: "Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis",
     excerpt:

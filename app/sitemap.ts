@@ -12,9 +12,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://www.arrnaya.com/blog",
-      lastModified: new Date("2026-08-05"),
+      lastModified: new Date("2026-08-17"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: "https://www.arrnaya.com/blog/ai-agent-trust-stack-erc-standards",
+      lastModified: new Date("2026-08-17"),
+      changeFrequency: "yearly",
+      priority: 0.8,
     },
     {
       url: "https://www.arrnaya.com/blog/elon-musk-money-wont-matter-2036",
