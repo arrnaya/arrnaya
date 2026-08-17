@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
@@ -71,9 +72,21 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative pt-16 overflow-hidden bg-[var(--bg)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--dusty-blue-glow)] via-transparent to-[var(--accent-glow)]" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/from-blocks-to-blockchain-buiding-defi.png')" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, var(--bg) 0%, rgba(245,239,226,0.94) 32%, rgba(245,239,226,0.6) 55%, rgba(245,239,226,0.15) 78%, transparent 100%)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--bg)]" />
+
         <div className="relative z-10 max-w-[1280px] mx-auto px-6 py-20 md:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center lg:items-end">
             {/* Left: Text Content */}
             <div className="text-left">
               <div className="text-[11px] font-semibold tracking-[3px] uppercase text-[var(--accent)] mb-4">
@@ -132,31 +145,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Abstract node-graph illustration */}
-            <div className="relative hidden lg:block h-[440px]">
-              <svg viewBox="0 0 400 440" className="w-full h-full" fill="none">
-                <circle cx="200" cy="220" r="150" fill="var(--accent)" opacity="0.08" />
-                <circle cx="130" cy="150" r="70" fill="var(--sage)" opacity="0.14" />
-                <circle cx="280" cy="310" r="90" fill="var(--dusty-blue)" opacity="0.14" />
-                {[
-                  [200, 220], [120, 170], [280, 150], [150, 320], [300, 260], [200, 90], [90, 280],
-                ].map((p, i, arr) => (
-                  <line key={i} x1={200} y1={220} x2={p[0]} y2={p[1]} stroke="var(--border-light)" strokeWidth="1.5" opacity="0.7" />
-                ))}
-                {[
-                  { p: [200, 220], r: 22, fill: "var(--text)" },
-                  { p: [120, 170], r: 12, fill: "var(--accent)" },
-                  { p: [280, 150], r: 15, fill: "var(--sage)" },
-                  { p: [150, 320], r: 10, fill: "var(--dusty-blue)" },
-                  { p: [300, 260], r: 13, fill: "var(--accent-light)" },
-                  { p: [200, 90], r: 9, fill: "var(--sage)" },
-                  { p: [90, 280], r: 11, fill: "var(--dusty-blue)" },
-                ].map((node, i) => (
-                  <circle key={i} cx={node.p[0]} cy={node.p[1]} r={node.r} fill={node.fill} />
-                ))}
-                <rect x="170" y="190" width="60" height="60" rx="14" fill="var(--bg-card)" stroke="var(--text)" strokeWidth="2" />
-                <path d="M190 220h20M200 210v20" stroke="var(--text)" strokeWidth="2.5" strokeLinecap="round" />
-              </svg>
+            {/* Right: Portrait */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-[220px] h-[147px] sm:w-[300px] sm:h-[200px] lg:w-[400px] lg:h-[267px] xl:w-[460px] xl:h-[307px]">
+                <Image
+                  src="/Arrnaya.png"
+                  alt="Arun Kumar Yadav — CTO & Chief Blockchain Officer"
+                  fill
+                  priority
+                  className="object-contain object-bottom drop-shadow-2xl"
+                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 300px, (max-width: 1280px) 400px, 460px"
+                />
+              </div>
             </div>
           </div>
         </div>
