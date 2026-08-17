@@ -92,12 +92,11 @@ export default function Home() {
               <div className="text-[11px] font-semibold tracking-[3px] uppercase text-[var(--accent)] mb-4">
                 CTO · Chief Blockchain Officer
               </div>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-[58px] font-bold leading-[1.05] tracking-tight mb-6 text-[var(--text)]">
-                The Infrastructure
-                <br />
-                <span className="text-[var(--text-dim)]">for the</span> Compliant
-                <br />
-                Financial Machine
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.08] tracking-tight mb-6 text-[var(--text)]">
+                Building the Future of Finance with{" "}
+                <span className="bg-gradient-to-r from-[var(--accent)] via-[var(--accent-light)] to-[var(--dusty-blue)] bg-clip-text text-transparent">
+                  Blockchain & DeFi
+                </span>
               </h1>
               <p className="text-base md:text-lg text-[var(--text-muted)] max-w-[480px] mb-9 leading-relaxed">
                 I build blockchain, DeFi, and tokenization infrastructure that unifies regulatory compliance, banking rails, and — increasingly — autonomous AI agents into systems built for real-world, mass-market adoption.
@@ -121,7 +120,7 @@ export default function Home() {
               <div className="flex flex-wrap items-center gap-5">
                 <div className="flex items-center gap-2 text-[13px] text-[var(--text-muted)]">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-[var(--accent)]"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
-                  <strong className="text-[var(--text)] font-bold">1,700+</strong> Followers
+                  <strong className="text-[var(--text)] font-bold">1,950+</strong> Followers
                 </div>
                 <div className="flex gap-3">
                   {[
@@ -147,14 +146,14 @@ export default function Home() {
 
             {/* Right: Portrait */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative w-[220px] h-[147px] sm:w-[300px] sm:h-[200px] lg:w-[400px] lg:h-[267px] xl:w-[460px] xl:h-[307px]">
+              <div className="relative w-[280px] h-[187px] sm:w-[380px] sm:h-[253px] lg:w-[500px] lg:h-[333px] xl:w-[580px] xl:h-[387px]">
                 <Image
                   src="/Arrnaya.png"
                   alt="Arun Kumar Yadav — CTO & Chief Blockchain Officer"
                   fill
                   priority
                   className="object-contain object-bottom drop-shadow-2xl"
-                  sizes="(max-width: 640px) 220px, (max-width: 1024px) 300px, (max-width: 1280px) 400px, 460px"
+                  sizes="(max-width: 640px) 280px, (max-width: 1024px) 380px, (max-width: 1280px) 500px, 580px"
                 />
               </div>
             </div>
@@ -168,7 +167,7 @@ export default function Home() {
           {[
             {
               icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>,
-              value: "1,700+", label: "LinkedIn Followers", desc: "Growing professional network of industry leaders",
+              value: "1,950+", label: "LinkedIn Followers", desc: "Growing professional network of industry leaders",
             },
             {
               icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><path d="M12 2v20" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>,
