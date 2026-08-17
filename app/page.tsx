@@ -426,7 +426,7 @@ export default function Home() {
                 Exploring the power of AI and Blockchain to transform industries, businesses, and everyday life. Practical insights for professionals across spheres.
               </p>
             </div>
-            <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 flex items-center gap-6 hover:border-[var(--accent)] hover:-translate-y-0.5 transition-all">
+            <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-2xl p-8 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 hover:border-[var(--accent)] hover:-translate-y-0.5 transition-all">
               <div className="w-16 h-16 shrink-0 flex items-center justify-center bg-[var(--text)] rounded-2xl text-[var(--bg)]">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
               </div>
