@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: "https://www.arrnaya.com/blog/erc-3643-trex-rwa-tokenization",
+      lastModified: new Date("2026-08-17"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.arrnaya.com/blog/ai-agent-trust-stack-erc-standards",
       lastModified: new Date("2026-08-17"),
       changeFrequency: "yearly",

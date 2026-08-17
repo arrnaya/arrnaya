@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "erc-3643-trex-rwa-tokenization",
+    title: "T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization",
+    excerpt:
+      "A practitioner's deep dive into ERC-3643's six-contract compliance architecture — ONCHAINID identity, modular compliance, agent governance, and the T-REX Ledger's multi-chain orchestration layer now powering Apex Group's $100B tokenization roadmap.",
+    category: "RWA & Compliance",
+    date: "August 2026",
+    readTime: "27 min read",
+  },
+  {
     slug: "ai-agent-trust-stack-erc-standards",
     title: "The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility",
     excerpt:

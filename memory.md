@@ -9,13 +9,13 @@
 
 ```
 Last session:        2026-08-17
-Last post published: The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility (2026-08-17)
-Last pillar used:    AI & Blockchain (user-provided topic — ERC agent standards)
+Last post published: T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization (2026-08-17)
+Last pillar used:    RWA & Compliance (user-provided topic — ERC-3643 / T-REX standard)
 Next pillar due:     Payments & Cards OR Regulatory
-Posts published (all time): 13
+Posts published (all time): 14
 Posts archived (all time):  0
-Current streak:      1 day
-Approval pending:    None
+Current streak:      2 (two posts same day — user-directed)
+Approval pending:    Full website redesign per reference-design.webp — built but held from push pending user approval
 ```
 
 ---
@@ -37,6 +37,7 @@ Approval pending:    None
 | 11 | 2026-06-29 | Banking 5.0: AI-Human Collaboration, Embedded Finance, and the Future of Financial Services | Future of Finance | `banking-5-0-ai-human-collaboration` | — | PUBLISHED |
 | 12 | 2026-08-05 | Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis | AI & Economics | `elon-musk-money-wont-matter-2036` | — | PUBLISHED |
 | 13 | 2026-08-17 | The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility | AI & Blockchain | `ai-agent-trust-stack-erc-standards` | — | PUBLISHED |
+| 14 | 2026-08-17 | T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization | RWA & Compliance | `erc-3643-trex-rwa-tokenization` | — | PUBLISHED |
 
 ---
 
@@ -95,6 +96,7 @@ Approval pending:    None
 - Banking 5.0 / Industry 5.0 financial services / AI-human collaboration in banking / embedded finance / BaaS / Open Banking ecosystems / 4Ps and 10Ps framework
 - Musk post-scarcity thesis / "money won't matter by 2036" / AI-driven deflation / Baumol effect / Engels' pause / UHI vs UBI / distribution economics / Economist interview dissection
 - AI agent trust standards / ERC-7662 (agent NFTs) / ERC-7857 (verifiable private metadata transfer, TEE/ZKP) / ERC-8004 (Trustless Agents identity registry) / ERC-8126 (agent verification & risk scoring) / ERC-8196 (policy-bound agentic wallet execution) / hosting trust trap / entropy commit-reveal / agent audit trails
+- ERC-3643 / T-REX protocol deep dive / six-contract compliance architecture / ONCHAINID / Identity Registry / modular Compliance module / agent forced-transfer & recovery / T-REX Ledger multi-chain orchestration / Apex Group $100B tokenization deal (note: distinct, standard-specific follow-up to the July 2025 `rwa-tokenization` post — not a repeat)
 
 ### Available — High Priority
 - Crypto Debit Card Infrastructure (BIN sponsorship, card networks, programme management)
@@ -167,10 +169,20 @@ Approval pending:    None
 | The Learning Loop Moat: AI Agents in Finance and Treasury | https://www.arrnaya.com/blog/ai-agents-the-learning-loop-moat |
 | Musk Post-Scarcity Thesis (Money Won't Matter by 2036) | https://www.arrnaya.com/blog/elon-musk-money-wont-matter-2036 |
 | The Trust Stack: ERC-7662, ERC-7857, ERC-8126 & ERC-8196 | https://www.arrnaya.com/blog/ai-agent-trust-stack-erc-standards |
+| T-REX Reloaded: ERC-3643 & RWA Tokenization | https://www.arrnaya.com/blog/erc-3643-trex-rwa-tokenization |
 
 ---
 
 ## 📋 Decisions Log
+
+### 2026-08-17 — ERC-3643 / T-REX RWA Tokenization Blog Published
+**Decision:** Publish 14th blog post: T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization
+**Scope:** Created `/app/blog/erc-3643-trex-rwa-tokenization/page.tsx`, updated blog index, sitemap, memory.md
+**Source:** User-provided links — eip-3643, erc3643.org, tokeny.com/erc3643, t-rex.network, T-REX/Apex Group news release (2026-03-19), ERC-3643 GitHub org. Researched directly via WebFetch for interfaces (IERC3643, IIdentityRegistry, ICompliance, ITrustedIssuersRegistry, IClaimTopicsRegistry, IAgentRole), adoption figures ($32B+ tokenized, Apex Group $100B/June 2027 target, $3.5T AUA), and EIP status (Final, created 2021-07-09, requires EIP-20 + EIP-173).
+**SEO:** 20 keywords, OG tags, Twitter cards, JSON-LD BlogPosting + FAQPage schema, direct outbound links to eip-3643, erc3643.org, tokeny.com, t-rex.network, the Apex Group announcement, and the ERC-3643 GitHub org
+**Design:** Purple sparkling hero with amber `#f59e0b` accent (regulatory/compliance theme per pattern rule), 6-contract architecture table, transfer-gate code block, ONCHAINID interface code block, TEE-style comparison tables, agent governance table, multi-chain before/after table, 5-phase reference flow + composed pseudocode, 4-panel limitations grid, 5-phase roadmap, 8 FAQ items
+**Related reading:** Links back to `rwa-tokenization` (July 2025, general RWA guide — this post is the standard-specific technical follow-up) and `ai-agent-trust-stack-erc-standards` (published same session)
+**Status:** COMPLETE
 
 ### 2026-08-17 — AI Agent Trust Stack (ERC-7662/7857/8126/8196) Blog Published
 **Decision:** Publish 13th blog post: The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility
