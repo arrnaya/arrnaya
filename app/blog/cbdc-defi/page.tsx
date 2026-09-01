@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     description:
       "Exploring the intersection of state-backed and open financial systems — and what it means for the future of money.",
     publishedTime: "2025-10-09",
+    modifiedTime: "2026-09-01",
     tags: ["CBDC", "DeFi", "Regulation", "Blockchain", "Digital Finance"],
   },
   twitter: {
@@ -60,6 +61,7 @@ export default function BlogPost() {
           "Central bank digital currencies and decentralized finance are reshaping the global monetary order — but do they represent complementary innovations or existential threats to one another?",
         slug: "cbdc-defi",
         datePublished: "2025-10-09",
+        dateModified: "2026-09-01",
         keywords: [
           "CBDC",
           "DeFi",
@@ -105,6 +107,7 @@ export default function BlogPost() {
                 Regulatory · Digital Finance · 2025
               </span>
               <span className="text-[11px] text-[#5c5644]">18 min read</span>
+              <span className="text-[11px] text-[#8a8268] font-mono">Updated September 2026</span>
             </div>
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               CBDCs & DeFi:
@@ -211,7 +214,7 @@ export default function BlogPost() {
                   Decentralized finance refers to the ecosystem of financial applications built primarily on public blockchains — Ethereum being the dominant platform — that replicate and extend traditional financial services without centralised intermediaries. Lending, borrowing, trading, derivatives, insurance, and yield generation are all available through smart contracts: self-executing code that enforces agreements algorithmically.
                 </p>
                 <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
-                  At peak, the DeFi ecosystem held over <strong className="text-[#201c14]">$180 billion in total value locked (TVL)</strong>. After the crypto winter of 2022, the sector has rebuilt with greater institutional participation, more sophisticated risk frameworks, and a growing focus on real-world asset (RWA) tokenization — the process of bringing bonds, equities, and property onto blockchain rails.
+                  At peak, the DeFi ecosystem held over <strong className="text-[#201c14]">$180 billion in total value locked (TVL) - currently holding around $88 Billion as per <a href="https://defillama.com/" target="_blank" rel="noopener noreferrer" className="text-[#c2703f] hover:underline">DefiLlama</a></strong>. After the crypto winter of 2022, the sector has rebuilt with greater institutional participation, more sophisticated risk frameworks, and a growing focus on real-world asset (RWA) tokenization — the process of bringing bonds, equities, and property onto blockchain rails.
                 </p>
 
                 {/* Pull Quote */}
@@ -249,7 +252,7 @@ export default function BlogPost() {
                 {[
                   ["Governance", "Issued and controlled by central banks. Policy dictated by monetary authorities.", "Governed by smart contract code and decentralized token-holder communities (DAOs)."],
                   ["Identity", "KYC/AML mandatory. All transactions linked to verified identities.", "Permissionless. Pseudonymous by default. Identity optional and user-controlled."],
-                  ["Privacy", "Government retains full transaction visibility. Limited user privacy by design.", "Public blockchain transparency, but wallet addresses are pseudonymous. Zero-knowledge proofs enable selective disclosure."],
+                  ["Privacy", "Government retains full transaction visibility. Limited user privacy by design.", "Public blockchain transparency, but wallet addresses are pseudonymous. Zero-knowledge proofs & Fully Homomorphic Encryption (FHE) enable selective disclosure."],
                   ["Programmability", "State-defined rules embedded by issuer. Users cannot modify conditions.", "User-defined interactions via open smart contracts. Composable with any other protocol."],
                   ["Resilience", "Single point of control. Dependent on central bank infrastructure and policy continuity.", "Distributed infrastructure. No single point of failure, but smart contract vulnerabilities remain a risk."],
                 ].flatMap(([label, cbdc, defi]) => [
@@ -288,14 +291,19 @@ export default function BlogPost() {
                   ))}
                 </div>
 
-                <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4">China&apos;s e-CNY: The Benchmark in Scale</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4"><a href="https://www.pbc.gov.cn/" target="_blank" rel="noopener noreferrer" className="text-[#c2703f] hover:underline">China&apos;s e-CNY: The Benchmark in Scale</a></h3>
                 <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   China's digital yuan, the e-CNY, represents the most advanced large-economy CBDC deployment. Distributed through major commercial banks, it has processed hundreds of billions of yuan in transactions across dozens of cities. Its architecture is deliberately centralised, featuring a tiered system where the People's Bank of China maintains ultimate visibility while users interact through commercial bank wallets. It operates alongside — not on — public blockchain infrastructure.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4">The European Central Bank&apos;s Digital Euro</h3>
+                <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4"><a href="https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html" target="_blank" rel="noopener noreferrer" className="text-[#c2703f] hover:underline">The European Central Bank&apos;s Digital Euro</a></h3>
                 <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   The ECB's digital euro project has moved into a preparation phase following extensive consultation. The design prioritises privacy (with transaction data not accessible to the ECB for individual payments below a certain threshold), a holding cap to prevent disintermediation of commercial banks, and offline capability. Whether the digital euro will be built to interact with DeFi protocols remains unresolved — and deeply political.
+                </p>
+
+                <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4"><a href="https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=3686" target="_blank" rel="noopener noreferrer" className="text-[#c2703f] hover:underline">India&apos;s e-Rupee</a></h3>
+                <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
+                  India's e-Rupee, launched in 2024, is a retail CBDC designed to enhance financial inclusion and reduce cash dependency. It operates on a hybrid model, combining centralised oversight with limited programmability. The Reserve Bank of India has expressed interest in exploring DeFi integration, particularly for cross-border remittances and tokenized government securities.
                 </p>
 
                 <h3 className="text-lg font-bold text-[#201c14] mt-10 mb-4">The United States: Deliberate Hesitation</h3>
@@ -387,7 +395,7 @@ export default function BlogPost() {
                 </div>
 
                 <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
-                  Several DeFi protocols have responded proactively, deploying <strong className="text-[#201c14]">decentralised identity (DID)</strong> solutions and <strong className="text-[#201c14]">zero-knowledge proof-based compliance layers</strong> that allow users to demonstrate regulatory compliance (jurisdiction, age, sanctions status) without revealing underlying personal data. This approach — sometimes called &quot;privacy-preserving compliance&quot; — may represent the technical bridge that allows DeFi to operate within regulatory frameworks without sacrificing its core privacy properties.
+                  Several DeFi protocols have responded proactively, deploying <a href="https://www.w3.org/TR/did-core/" target="_blank" rel="noopener noreferrer"><strong className="text-[#201c14]">decentralised identity (DID) </strong></a> solutions and <strong className="text-[#201c14]">zero-knowledge proof-based compliance layers</strong> that allow users to demonstrate regulatory compliance (jurisdiction, age, sanctions status) without revealing underlying personal data. This approach — sometimes called &quot;privacy-preserving compliance&quot; — may represent the technical bridge that allows DeFi to operate within regulatory frameworks without sacrificing its core privacy properties.
                 </p>
                 <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
                   Whether regulators will accept zero-knowledge proofs as equivalent to traditional KYC documentation is, as of 2025, still being negotiated.
@@ -411,7 +419,7 @@ export default function BlogPost() {
                 <div>
                   <h3 className="text-lg font-bold text-[#201c14] mb-3">Interoperability Standards</h3>
                   <p className="text-sm md:text-base text-[#5c5644] leading-relaxed">
-                    The Bank for International Settlements' <strong className="text-[#201c14]">Project mBridge</strong> — a multi-CBDC platform connecting central banks in China, Hong Kong, Thailand, the UAE, and Saudi Arabia — is actively developing interoperability standards that could define how sovereign digital currencies interact with one another and, potentially, with public blockchain infrastructure. If mBridge or successor frameworks adopt EVM-compatible or otherwise open-standard architectures, the on-ramp from CBDC to DeFi becomes technically trivial.
+                    The Bank for International Settlements' <a href="https://www.bis.org/projects/mbridge.htm" target="_blank" rel="noopener noreferrer"><strong className="text-[#201c14]">Project mBridge</strong></a> — a multi-CBDC platform connecting central banks in China, Hong Kong, Thailand, the UAE, and Saudi Arabia — is actively developing interoperability standards that could define how sovereign digital currencies interact with one another and, potentially, with public blockchain infrastructure. If mBridge or successor frameworks adopt EVM-compatible or otherwise open-standard architectures, the on-ramp from CBDC to DeFi becomes technically trivial.
                   </p>
                 </div>
 
@@ -483,7 +491,7 @@ export default function BlogPost() {
         <div className="max-w-[1200px] mx-auto px-6 pb-24">
           <div className="border-t border-[#ddd0b2] pt-10 flex flex-col sm:flex-row justify-between items-center gap-6">
             <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
-              CBDCs & DeFi: Convergence or Collision? · Oct 2025
+              CBDCs & DeFi: Convergence or Collision? · Oct 2025 · Updated Sept 2026
             </p>
             <p className="text-[11px] font-mono text-[#8a8268] tracking-wider">
               For educational use · Not financial advice

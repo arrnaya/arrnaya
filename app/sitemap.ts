@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://www.arrnaya.com/blog/cbdc-defi",
-      lastModified: new Date("2025-10-09"),
+      lastModified: new Date("2026-09-01"),
       changeFrequency: "yearly",
       priority: 0.8,
     },
