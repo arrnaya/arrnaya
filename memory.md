@@ -199,6 +199,23 @@ Full redesign inspired by `reference-design.webp` (a VAST Data–style layout), 
 
 ## 📋 Decisions Log
 
+### 2026-09-01 — CBDC/DeFi Content Refresh + Established the Content-Update Protocol
+**Decision:** User hand-edited `app/blog/cbdc-defi/page.tsx` directly (refreshed TVL stat, added an India e-Rupee section, added outbound citations) and asked how to commit it and handle it SEO-wise. Established the standing protocol for future content edits to already-published posts:
+1. Never change `datePublished` — it's the historical record.
+2. Add/update `dateModified` in the JSON-LD schema call (`blogPostingSchema()`'s `dateModified` param) and `modifiedTime` in the Next.js `openGraph` metadata block — these are the actual machine-readable freshness signals, not the sitemap.
+3. Bump that URL's `lastModified` in `app/sitemap.ts` to the edit date.
+4. Add a visible "Updated [Month Year]" marker near the top (hero badge row) and in the post footer — user confirmed they want this visible to readers, not just backend metadata.
+5. Commit as `[update] ...`, separate from any `[blog]` (new post) or `[fix]` commits, and never bundle it with unrelated changes.
+6. While reviewing a manual edit, verify any newly-added outbound links actually resolve to the intended domain (caught 3 wrong URLs this way — see the `[fix]` commit below) and check they reuse the file's existing link style constant/pattern rather than introducing a new one-off class.
+**Scope:** `app/blog/cbdc-defi/page.tsx`, `app/sitemap.ts` — commit `55ad44e`.
+**Status:** COMPLETE — apply this same 6-step protocol to any future "I edited post X manually" request without re-deriving it.
+
+### 2026-09-01 — Fixed Wrong Project URLs in the FHE Post
+**Decision:** A separate manual edit (found already sitting uncommitted in the working tree while handling the above) added 4 outbound links to `fhe-blockchain-privacy-layer/page.tsx` for Zama/Fhenix/Inco Network/OpenFHE, styled with an undefined `var(--text-link)` CSS variable (falls back to inherited body-text color — links were invisible until hover). Verified all 4 domains via WebSearch: 3 were wrong (`zama.org`→`zama.ai`, `fhenix.ai`→`fhenix.io`, `incnetwork.io`→`inco.org`; `openfhe.org` was already correct). Fixed URLs and switched all 4 to the file's existing `linkCls` constant.
+**Scope:** `app/blog/fhe-blockchain-privacy-layer/page.tsx` — commit `646e7aa`.
+**Lesson:** When a manual edit adds new external links, always verify the domain before it ships — don't assume a plausible-looking guessed URL (e.g. `fhenix.ai`, which reads as equally likely to the real `fhenix.io`) is correct just because it fits the naming pattern.
+**Status:** COMPLETE
+
 ### 2026-09-01 — Fully Homomorphic Encryption Blog Published
 **Decision:** Publish 15th blog post: Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain
 **Scope:** Created `/app/blog/fhe-blockchain-privacy-layer/page.tsx`, updated blog index, sitemap, memory.md
