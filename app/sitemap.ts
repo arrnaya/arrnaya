@@ -12,9 +12,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://www.arrnaya.com/blog",
-      lastModified: new Date("2026-08-17"),
+      lastModified: new Date("2026-09-01"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: "https://www.arrnaya.com/blog/fhe-blockchain-privacy-layer",
+      lastModified: new Date("2026-09-01"),
+      changeFrequency: "yearly",
+      priority: 0.8,
     },
     {
       url: "https://www.arrnaya.com/blog/erc-3643-trex-rwa-tokenization",

@@ -8,14 +8,14 @@
 ## 🟢 System Status
 
 ```
-Last session:        2026-08-17
-Last post published: T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization (2026-08-17)
-Last pillar used:    RWA & Compliance (user-provided topic — ERC-3643 / T-REX standard)
+Last session:        2026-09-01
+Last post published: Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain (2026-09-01)
+Last pillar used:    Cryptography & Privacy (user-provided topic + local/FHE.md outline)
 Next pillar due:     Payments & Cards OR Regulatory
-Posts published (all time): 14
+Posts published (all time): 15
 Posts archived (all time):  0
-Current streak:      2 (two posts same day — user-directed)
-Approval pending:    Full website redesign per reference-design.webp — built but held from push pending user approval
+Current streak:      1 day
+Approval pending:    None — website redesign (warm editorial theme per reference-design.webp) was approved and merged to main on 2026-08-17/18; live design system is now the warm cream/terracotta/sage/dusty-blue theme, not the old dark violet one
 ```
 
 ---
@@ -38,12 +38,15 @@ Approval pending:    Full website redesign per reference-design.webp — built b
 | 12 | 2026-08-05 | Money Won't Matter by 2036: Dissecting Elon Musk's Post-Scarcity Thesis | AI & Economics | `elon-musk-money-wont-matter-2036` | — | PUBLISHED |
 | 13 | 2026-08-17 | The Trust Stack: How ERC-7662, ERC-7857, ERC-8126 & ERC-8196 Give Anonymous AI Agents On-Chain Credibility | AI & Blockchain | `ai-agent-trust-stack-erc-standards` | — | PUBLISHED |
 | 14 | 2026-08-17 | T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization | RWA & Compliance | `erc-3643-trex-rwa-tokenization` | — | PUBLISHED |
+| 15 | 2026-09-01 | Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain | Cryptography & Privacy | `fhe-blockchain-privacy-layer` | — | PUBLISHED |
 
 ---
 
 ## 🎨 Blog Aesthetic Pattern (Reference Before Every Generation)
 
-**Established design system across all arrnaya.com posts:**
+**[SUPERSEDED 2026-08-18] Everything in this section describes the old dark-violet theme, which was fully replaced by a warm editorial redesign (cream/terracotta/sage/dusty-blue, Space Grotesk display font) merged to main and live in production. See "🎨 Current Design System (Warm Editorial, live since 2026-08-18)" below for what to actually use. Kept here for historical record only — do not build new posts against this palette.**
+
+**Established design system across all arrnaya.com posts (historical, dark theme):**
 
 - **Dark theme variants used so far:**
   - Post 1 (DeFi Banking SEA): Editorial dark — deep navy, violet accents
@@ -73,8 +76,28 @@ Approval pending:    Full website redesign per reference-design.webp — built b
   - **Conclusion:** Centered box with `bg-[#0a0a12] border border-[#1a1a2e] rounded-2xl`
   - **Post footer:** Mono text, border-t, flex row
 
-- **Pattern rule:** The unified dark theme is now the standard. Future posts should evolve within this system — introduce accent color shifts (e.g., cyan/teal for AI posts, amber for regulatory) rather than full theme changes.
-- **Components always present:** TOC with anchors, pull quotes, data tables, code/formula blocks, FAQ accordions, JSON-LD schema, conclusion block, related reading.
+- **Pattern rule (historical):** The unified dark theme was the standard through mid-August 2026. Superseded — see below.
+- **Components always present (still true today):** TOC with anchors, pull quotes, data tables, code/formula blocks, FAQ accordions, JSON-LD schema, conclusion block, related reading.
+
+---
+
+## 🎨 Current Design System (Warm Editorial, live since 2026-08-18)
+
+Full redesign inspired by `reference-design.webp` (a VAST Data–style layout), built on `redesign/reference-editorial` branch and merged/pushed to `main` on 2026-08-18. This is the live site as of every session from here forward.
+
+- **Palette (CSS vars in `app/globals.css`, but individual blog posts use literal hex per post rather than `var()`):**
+  - Background: `--bg` #f5efe2, `--bg-alt` #ece1cc, `--bg-card` #fbf7ee
+  - Text: `--text` #201c14, `--text-muted` #5c5644, `--text-dim` #8a8268
+  - Border: `--border` #ddd0b2, `--border-light` #c7b790
+  - Accent family used across posts (pick a primary + secondary per post, consistent with topic): terracotta `#c2703f`/light `#d68554` (primary default), dusty-blue `#6f8fa3`/light `#93aab8` (info/technical/privacy topics), sage `#74805e`/light `#8fa077` (success/compliance), gold `#b98a3d` (warn), danger red `#b0432f` (critical)
+  - Fonts: Space Grotesk for headlines (`font-display` Tailwind class, added to every `<h1>`/`<h2>`), Inter for body
+- **Hero pattern (per post):** `bg-[#ece1cc]` base + 3 blurred color-glow circles (primary/secondary/tertiary accent) + 8-position radial-gradient sparkle overlay (dot pattern, same technique as before just recolored) + bottom fade to `#f5efe2`
+- **Navbar:** transparent at scroll top, becomes solid `rgba(245,239,226,0.85)` + blur + border past 24px scroll (see `app/components/Navbar.tsx` — scroll-state driven, not always-on)
+- **Footer:** dark near-black `--footer-bg` #16130d band with a faint sage circuit-line grid pattern behind a centered CTA, then the standard 4-column link footer
+- **Homepage hero:** full-bleed composited background image (`/hero-section-bg-new.png`, portrait baked in) at `lg:` and up only; below `lg` the same image renders as a plain, uncropped rounded-3xl card below the text instead (avoids text-over-face overlap on narrow viewports — see decision log 2026-08-18)
+- **Tables/code blocks/callouts/pull quotes/phase-badges/conclusion box:** same structural components as the old dark theme, just recolored to the new palette — no structural change needed, only hex swaps
+- **Pattern rule:** New posts pick ONE primary + ONE secondary accent from the family above based on topic (e.g. dusty-blue+sage for cryptography/privacy, amber+terracotta for regulatory/compliance, terracotta+violet-family is retired — violet is gone from the palette entirely). Do not reintroduce dark backgrounds, violet (`#a855f7`/`#7c3aed`/`#8b5cf6`), or cyan (`#06b6d4`) — those are the old theme's tokens and were systematically retired across all 17 pre-existing posts via a recolor script on 2026-08-18.
+- **Components always present:** TOC with anchors, pull quotes, data tables, code/formula blocks, FAQ accordions, JSON-LD schema, conclusion block, related reading — unchanged from before.
 
 ---
 
@@ -170,10 +193,20 @@ Approval pending:    Full website redesign per reference-design.webp — built b
 | Musk Post-Scarcity Thesis (Money Won't Matter by 2036) | https://www.arrnaya.com/blog/elon-musk-money-wont-matter-2036 |
 | The Trust Stack: ERC-7662, ERC-7857, ERC-8126 & ERC-8196 | https://www.arrnaya.com/blog/ai-agent-trust-stack-erc-standards |
 | T-REX Reloaded: ERC-3643 & RWA Tokenization | https://www.arrnaya.com/blog/erc-3643-trex-rwa-tokenization |
+| Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain | https://www.arrnaya.com/blog/fhe-blockchain-privacy-layer |
 
 ---
 
 ## 📋 Decisions Log
+
+### 2026-09-01 — Fully Homomorphic Encryption Blog Published
+**Decision:** Publish 15th blog post: Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain
+**Scope:** Created `/app/blog/fhe-blockchain-privacy-layer/page.tsx`, updated blog index, sitemap, memory.md
+**Source:** User provided `local/FHE.md` (an outline: recommended titles, healthcare/finance/RWA application angles, FHE-vs-alternatives comparison table, honest-costs checklist) and required one specific H2 for SEO: "Can Blockchain Protect Sensitive Data? The Case for Fully Homomorphic Encryption" — used verbatim as section 2's heading. Supplemented with live WebSearch research (not in the outline) to ground the piece in current 2026 facts: Zama's Dec 30 2025 production FHE mainnet on Ethereum ($121M+ confidential USDT shielded in first weeks, 100k TPS target), Fhenix's CoFHE coprocessor on Arbitrum, Inco Network's confidentiality-as-a-service layer, TFHE/CKKS/BFV/BGV scheme tradeoffs, sub-1ms TFHE bootstrapping on NVIDIA H100 GPUs, and OpenFHE 1.5.
+**Design:** First post built entirely under the new warm editorial system (no dark-theme starting point to recolor) — dusty-blue `#6f8fa3` primary + sage `#74805e` secondary accent (privacy/cryptography topic), gold `#b98a3d` warn + red `#b0432f` danger for the costs section panels. Standard structure: hero w/ 3 stat callouts, TOC, 10 numbered sections + conclusion, 3 comparison tables, 2 code blocks (traditional vs FHE architecture flow + illustrative fhEVM-style Solidity), 4-item benefit grids for healthcare/finance, 4-panel real-costs grid, 5-phase roadmap, 9 FAQ items.
+**Internal links:** Links to `zero-knowledge-proofs-financial-infrastructure` (ZK comparison), `erc-3643-trex-rwa-tokenization` (RWA compliance section — FHE proposed as a privacy add-on to ERC-3643's Compliance contract), and `institutional-custody-architecture` (MPC/threshold-signing analogy) — all three also in Related Reading.
+**Also updated:** Marked the old "Blog Aesthetic Pattern" (dark theme) section as `[SUPERSEDED 2026-08-18]` and added a new "Current Design System (Warm Editorial)" section documenting the live palette, since prior memory entries only described the retired dark theme and would mislead a future session.
+**Status:** COMPLETE
 
 ### 2026-08-17 — ERC-3643 / T-REX RWA Tokenization Blog Published
 **Decision:** Publish 14th blog post: T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization

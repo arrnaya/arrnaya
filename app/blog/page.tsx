@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "fhe-blockchain-privacy-layer",
+    title: "Fully Homomorphic Encryption: The Missing Privacy Layer for Blockchain",
+    excerpt:
+      "How FHE enables computation on encrypted data — and could unlock private healthcare, institutional finance, and compliant RWA tokenization. TFHE, CKKS, and BFV/BGV explained, plus how FHE compares to ZK proofs, MPC, and TEEs, and the real costs of building on it today.",
+    category: "Cryptography & Privacy",
+    date: "September 2026",
+    readTime: "26 min read",
+  },
+  {
     slug: "erc-3643-trex-rwa-tokenization",
     title: "T-REX Reloaded: How ERC-3643 Is Rewiring Real-World Asset Tokenization",
     excerpt:
